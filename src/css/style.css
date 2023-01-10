@@ -1,0 +1,1142 @@
+@import "https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap";
+
+@font-face {
+    font-family: LibertinusMath-Regular;
+    src: url("../fontFiles/LibertinusMath-Regular.otf");
+}
+
+@font-face {
+    font-family: LibertinusMono-Regular;
+    src: url("../fontFiles/LibertinusMono-Regular.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+input {
+    all: unset;
+}
+
+body {
+    background: #131317;
+    transition: all 1s;
+}
+
+.mainFrame {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .mainFrame {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+.commonText {
+    color: #e9e9e9;
+    text-align: left;
+    padding: 1em 5em;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 1.6em;
+}
+
+@media (max-width: 1000px) {
+    .commonText {
+        padding: 1em 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .commonText {
+        padding: 1em;
+    }
+}
+
+.sticky {
+    width: 100%;
+    position: sticky;
+}
+
+.navbar {
+    min-height: 7vh;
+    max-height: 10vh;
+    background: #07070a;
+    justify-content: space-between;
+    padding: 16px 17px 13px 45px;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: flex-end;
+    }
+}
+
+.navbarAccount {
+    min-height: 7vh;
+    max-height: 10vh;
+    background: #07070a;
+    justify-content: space-between;
+    padding: 16px 17px 13px 45px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .navbarAccount {
+        display: flex;
+    }
+}
+
+.burger, .icon {
+    width: 2rem;
+}
+
+.iconSVG, .burgerIcon {
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.burgerIcon:hover {
+    content: url("../img/hoverBurger.svg");
+    animation: .5s linear svgFade;
+    rotate: 90deg;
+}
+
+.iconSVG:hover {
+    transform: scale(1.3);
+}
+
+.icon:hover {
+    width: 3rem;
+}
+
+.returnToNewton {
+    color: #e9e9e9;
+    margin: auto;
+    font-family: Crimson Pro, serif;
+    font-size: 2.3em;
+    font-weight: 400;
+}
+
+.returnToNewton:hover {
+    color: #0000;
+    background-image: linear-gradient(#e9e9e9, #e9470c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all .5s;
+}
+
+@keyframes svgFade {
+    0% {
+        rotate: none;
+    }
+
+    100% {
+        rotate: 90deg;
+    }
+}
+
+.inputSection {
+    width: 45%;
+    min-width: 600px;
+    padding-bottom: 1.2rem;
+    font-family: LibertinusMono-Regular, serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+    .inputSection {
+        width: 100%;
+        min-width: auto;
+        padding: 0 1rem 1.4rem;
+    }
+}
+
+.space {
+    padding-top: 10rem;
+}
+
+.inputBar {
+    height: inherit;
+    width: 100%;
+    text-indent: 10px;
+    background: #e9e9e9;
+    border-radius: 8px;
+}
+
+.equal {
+    height: calc(100% - .9rem);
+}
+
+.equalImg {
+    height: 100%;
+    transition: all 2s;
+}
+
+.equalImg:hover {
+    content: url("../img/hoverEqual.svg");
+}
+
+.inputBarArea {
+    height: 3.4rem;
+    width: 100%;
+    background: #e9e9e9;
+    border-radius: 8px;
+    align-items: center;
+    padding-right: .4rem;
+    display: flex;
+}
+
+.keyBoardSection {
+    width: 67vw;
+    min-width: 27rem;
+    grid-template-columns: repeat(9, 2rem);
+    justify-content: center;
+    justify-items: center;
+    gap: .35rem 2.2rem;
+    padding-top: .2rem;
+    display: grid;
+}
+
+@media (max-width: 600px) {
+    .keyBoardSection {
+        width: 100%;
+        grid-template-columns: repeat(6, 2rem);
+        gap: .7rem 1.7rem;
+    }
+}
+
+.keyboardButton {
+    color: #07070a;
+    height: 2.9rem;
+    width: 3.4rem;
+    background: #e9e9e9;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 1.4em;
+    transition: all .3s;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .keyboardButton {
+        height: 2em;
+        width: 2.6em;
+        font-size: 1.2em;
+    }
+}
+
+.keyboardButton:hover {
+    background: #f19675;
+}
+
+.keyboardButton:visited {
+    color: #07070a;
+}
+
+.clearButton {
+    height: 100%;
+    width: 100%;
+    background: #f19675;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.clearButton:hover {
+    background: #e9470c;
+}
+
+.customIcon {
+    height: 100%;
+    width: 100%;
+}
+
+.cscAlign {
+    grid-column-start: 2;
+}
+
+@media (max-width: 600px) {
+    .cscAlign {
+        grid-column-start: auto;
+    }
+}
+
+.derivAlign {
+    grid-column-start: auto;
+}
+
+@media (max-width: 600px) {
+    .derivAlign {
+        grid-column-start: 2;
+    }
+}
+
+.resultSection {
+    width: 37%;
+    min-width: 29rem;
+    padding: 4rem 0 1rem;
+}
+
+@media (max-width: 600px) {
+    .resultSection {
+        width: 100%;
+        min-width: auto;
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+.resultBox {
+    height: 28vh;
+    width: inherit;
+    background: #e9e9e9;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: LibertinusMono-Regular, serif;
+    font-size: 1.4em;
+    display: flex;
+    position: relative;
+}
+
+.copyToClipboard {
+    width: 1.2em;
+    position: absolute;
+    bottom: 20px;
+    right: 1em;
+}
+
+.copyToClipboardImg {
+    height: 100%;
+    width: 100%;
+}
+
+.copyToClipboardImg:hover {
+    content: url("../img/hoverClipboard.svg");
+}
+
+.resultBoxBackground {
+    background: #b0b0b0;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+@media (max-width: 600px) {
+    .resultBoxBackground {
+        padding: 1.1rem;
+    }
+}
+
+.bizumOverlay {
+    color: #fff;
+    opacity: 0;
+    width: 100%;
+    height: 20vh;
+    background: #07070a;
+    border-radius: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    display: flex;
+    position: absolute;
+}
+
+.bizumDonationText {
+    color: #e9e9e9;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 1.2em;
+}
+
+.bizumMobileNumber {
+    color: #e9470c;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 2em;
+}
+
+.bizumCloseButtom {
+    color: #e9e9e9;
+    background: #e9470c;
+    border: 0;
+    border-radius: 8px;
+    padding: .5em;
+    font-family: Crimson Pro, serif;
+    font-size: .9em;
+}
+
+.bizumCloseButtom:hover {
+    cursor: pointer;
+    color: #07070a;
+    background: #f19675;
+}
+
+.guestOverlay {
+    height: 9vh;
+    width: 40vh;
+    opacity: 0;
+    background: #07070a;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1.2rem;
+    transition: all .5s;
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    left: 3%;
+}
+
+.loginOverlay {
+    height: 44vh;
+    width: 40vh;
+    opacity: 0;
+    z-index: 1;
+    background: #07070a;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 1.8em .7em .5em;
+    transition: all .5s;
+    display: none;
+    position: absolute;
+    top: 6.5rem;
+    left: 3%;
+}
+
+@media (max-width: 600px) {
+    .loginOverlay {
+        top: 4rem;
+        left: 10vw;
+    }
+}
+
+.registerOverlay {
+    height: 31.5rem;
+    width: 40vh;
+    /* De aqui he quitado transition: 0;*/
+    opacity: 0;
+    z-index: 1;
+    background: #07070a;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 1.4em .7em .5em;
+    display: none;
+    position: absolute;
+    top: 6.5rem;
+    left: 3%;
+}
+
+@media (max-width: 600px) {
+    .registerOverlay {
+        top: 4rem;
+        left: 10vw;
+    }
+}
+
+.registerForm {
+    border-top: .5px solid #e9e9e9;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+    margin-top: .5em;
+    padding: 1em;
+    font-size: 1.3em;
+    display: flex;
+}
+
+.continueImg {
+    padding-right: 5px;
+}
+
+.homeOverlay {
+    height: 50vh;
+    width: 40vh;
+    opacity: 0;
+    z-index: 1;
+    background: #07070a;
+    border-radius: 8px;
+    flex-direction: column;
+    transition: all .5s;
+    display: none;
+    position: absolute;
+    top: 6.5rem;
+    left: 3%;
+}
+
+@media (max-width: 600px) {
+    .homeOverlay {
+        top: 4rem;
+        left: 10vw;
+    }
+}
+
+.avatar {
+    height: 23vh;
+    width: 23vh;
+    align-self: center;
+    padding: 2rem;
+}
+
+.overlayButton1, .overlayButton2, .overlayButton3 {
+    color: #e9e9e9;
+    background: #07070a;
+    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    font-size: 1.5em;
+    transition: all .4s;
+}
+
+.overlayButton1:hover {
+    color: #07070a;
+    background: #eebc98;
+}
+
+.overlayButton2:hover {
+    color: #07070a;
+    background: #f19675;
+}
+
+.overlayButton3:hover {
+    color: #07070a;
+    background: #e9470c;
+}
+
+.overlayCloseArea {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: all .5s;
+    display: none;
+    position: absolute;
+}
+
+.cardOverlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #07070a;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    transition: all .5s;
+    display: flex;
+    position: absolute;
+}
+
+.board {
+    height: 83%;
+    width: 60%;
+    min-width: auto;
+    background: #07070a;
+    border-radius: 10px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    display: grid;
+}
+
+@media (max-width: 1600px) {
+    .board {
+        width: 60rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .board {
+        width: 100%;
+    }
+}
+
+.accountMenu {
+    height: 45%;
+    min-width: 14em;
+    background: #131317;
+    border-radius: 10px;
+    flex-direction: column;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 2em;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .accountMenu {
+        display: none;
+    }
+}
+
+.profileArea {
+    box-sizing: border-box;
+    min-height: auto;
+    height: 100%;
+    width: 100%;
+    background: #07070a;
+    border-radius: 10px;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+    align-items: center;
+    padding: 2em;
+    display: flex;
+}
+
+.securityArea, .paymentsArea, .settingsArea {
+    box-sizing: border-box;
+    min-height: auto;
+    height: 100%;
+    width: 100%;
+    background: #07070a;
+    border-radius: 10px;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+    align-items: center;
+    padding: 2em;
+    display: none;
+}
+
+.accountMenuButton {
+    width: 100%;
+    color: #e9e9e9;
+    background: #131317;
+    padding: 1rem;
+    font-family: Crimson Pro, serif;
+    font-size: 1.6em;
+    transition: all .5s;
+}
+
+.accountMenuButton:hover {
+    background: #e9470c;
+}
+
+.accountAvatar {
+    height: 8rem;
+    width: 8rem;
+}
+
+.accountSocial {
+    height: 5rem;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    gap: .7em;
+    margin-top: 1.5em;
+    display: flex;
+}
+
+.mediaIcon {
+    height: 4rem;
+    width: 4rem;
+    background: #e9470c;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    transition: all .3s;
+    display: flex;
+}
+
+.mediaIcon:hover {
+    background: #eebc98;
+}
+
+.profileTitle {
+    color: #e9e9e9;
+    border-bottom: 1px solid #e9470c;
+    align-self: flex-end;
+    padding-left: 1.5em;
+    font-family: Crimson Pro, serif;
+    font-weight: 400;
+    transition: all .5s;
+}
+
+.userDataForm {
+    flex-direction: column;
+    gap: .5em;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.miniFormTitle {
+    padding-bottom: 1em;
+}
+
+.userDataLabel {
+    color: #e9e9e9;
+    padding-bottom: .5em;
+    font-family: LibertinusMath-Regular, serif;
+    font-weight: 300;
+}
+
+.settingsContainer {
+    color: #e9e9e9;
+    width: 50%;
+    min-width: 10em;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 1.2em;
+    display: flex;
+}
+
+.settingsLabel {
+    width: 100%;
+}
+
+.dangerZone {
+    color: #e9e9e9;
+    border: .1em solid #e9470c;
+    border-radius: 9px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+    padding: 1em;
+    transition: all .5s;
+    display: flex;
+}
+
+#profile {
+    background: #e9470c;
+}
+
+#security, #payment, #settings {
+    background: #131317;
+}
+
+.contentBoard {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.donationsBoard {
+    background: #07070a;
+    border-radius: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 2em 5em;
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .donationsBoard {
+        background: #131317;
+        padding: 1em 2em;
+    }
+}
+
+.commonTitle {
+    color: #e9e9e9;
+    padding: .5em 0 1em;
+    font-family: Crimson Pro, serif;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .commonTitle {
+        font-size: 2em;
+    }
+}
+
+.alignNewtonLogo {
+    align-self: center;
+}
+
+.donateButton {
+    width: 100%;
+    color: #eebc98;
+    border: .1em solid #e9470c;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-family: LibertinusMath-Regular, serif;
+    font-size: 1.3em;
+    transition: all .5s;
+    display: flex;
+    position: relative;
+}
+
+.donateButton:hover {
+    background: #e9470c;
+    border-color: #e9470c;
+}
+
+.divider {
+    width: 100%;
+    height: 1em;
+}
+
+.cardIcon, .patreonIcon, .bizumIcon, .paypalIcon {
+    width: 7em;
+    height: 2em;
+}
+
+.aboutText {
+    width: 55%;
+}
+
+@media (max-width: 1400px) {
+    .aboutText {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutText {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutText {
+        width: 100%;
+    }
+}
+
+.aboutSocial {
+    width: 10%;
+    margin: 1em;
+}
+
+.aboutTitle {
+    padding: 0;
+}
+
+.centerParagraph {
+    text-align: left;
+}
+
+.aboutContactButton {
+    width: 15em;
+}
+
+.normalNewton {
+    z-index: 1;
+    transition: all 3s;
+    position: relative;
+    bottom: -1em;
+    rotate: 90deg;
+}
+
+.normal404 {
+    color: #e9e9e9;
+    z-index: 3;
+    background: #07070a;
+    border-radius: 10px;
+    padding: 1em;
+    font-family: Crimson Pro, serif;
+    font-size: calc(80px + 2.1vw);
+}
+
+.dropNewton {
+    transform-origin: 0 0;
+    animation: 4s linear falling;
+}
+
+@keyframes falling {
+    0% {
+        rotate: none;
+    }
+
+    30% {
+        rotate: 80deg;
+    }
+
+    50% {
+        rotate: 40deg;
+    }
+
+    70% {
+        rotate: 60deg;
+    }
+
+    100% {
+        rotate: 90deg;
+    }
+}
+
+.accountMain {
+    width: 100%;
+    height: 84vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .accountMain {
+        flex-direction: column;
+    }
+}
+
+.donateMain {
+    grid-column-gap: 16px;
+    width: 100%;
+    height: 90vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em;
+    display: grid;
+}
+
+@media (max-width: 600px) {
+    .donateMain {
+        width: 100vw;
+        flex-direction: column;
+        display: flex;
+        overflow-x: hidden;
+    }
+}
+
+.aboutMain {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .aboutMain {
+        width: 100vw;
+        padding: .8em 0;
+        overflow-x: hidden;
+    }
+}
+
+.logoNewton {
+    color: #e9e9e9;
+    padding: 2rem 0 .2rem;
+    font-family: Crimson Pro, serif;
+    font-size: calc(80px + 2.1vw);
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .logoNewton {
+        padding: 0 0 .6rem;
+        font-size: 4.7rem;
+    }
+}
+
+.formInputBox {
+    width: 100%;
+    height: 3.5vh;
+    text-indent: 10px;
+    color: #07070a;
+    background: #e9e9e9;
+    border-radius: 4px;
+    font-family: LibertinusMath-Regular, serif;
+    transition: all .5s;
+}
+
+.formInputBox:hover {
+    cursor: text;
+}
+
+.formInputBox:focus {
+    color: #e9e9e9;
+    background: #07070a;
+    border-width: 1px;
+    border-color: #e9470c;
+    box-shadow: 0 0 3px #e9470c;
+}
+
+.registerSignUpButton {
+    color: #e9e9e9;
+    background: #e9470c;
+    border-radius: 8px;
+    padding: .5rem 1.1rem;
+    font-family: Crimson Pro, serif;
+    font-size: 1em;
+    transition: all .5s;
+}
+
+.registerSignUpButton:hover {
+    color: #07070a;
+    background: #eebc98;
+}
+
+.continueWithButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    display: flex;
+}
+
+.continueButton {
+    width: 80%;
+    height: 40%;
+    color: #e9e9e9;
+    border: .1em solid #e9470c;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.3em;
+    transition: all .5s;
+    display: flex;
+}
+
+.continueButton:hover {
+    color: #07070a;
+    background: #eebc98;
+    border-color: #eebc98;
+}
+
+.continuePaypal:hover {
+    background: #e9470c;
+    border-color: #e9470c;
+}
+
+.signUpButton {
+    color: #e9e9e9;
+    background: #e9470c;
+    border-radius: 8px;
+    padding: .5rem 1.8rem;
+    font-family: Crimson Pro, serif;
+    font-size: 1.7em;
+}
+
+.logInButton {
+    color: #e9e9e9;
+    border-radius: 8px;
+    padding: .5rem 1.8rem;
+    font-family: Crimson Pro, serif;
+    font-size: 1.7em;
+}
+
+.logInButton:hover, .signUpButton:hover {
+    color: #07070a;
+    background: #eebc98;
+}
+
+.orangeRoundedButton {
+    color: #e9e9e9;
+    background: #e9470c;
+    border: 0;
+    border-radius: 8px;
+    margin: auto;
+    padding: .5em;
+    font-family: Crimson Pro, serif;
+    font-size: .9em;
+}
+
+.orangeRoundedButton:hover {
+    cursor: pointer;
+    color: #07070a;
+    background: #eebc98;
+}
+
+.deleteButton {
+    color: #e9e9e9;
+    background: red;
+    border: 0;
+    border-radius: 8px;
+    padding: .5em;
+    font-family: Crimson Pro, serif;
+    font-size: .8em;
+    transition: all 1s;
+}
+
+.deleteButton:hover {
+    cursor: help;
+    color: #07070a;
+    background: #e9e9e9;
+}
+
+.customLink {
+    color: #e9470c;
+}
+
+.customLink:hover {
+    color: #eebc98;
+}
+
+.customLink:visited {
+    color: #f19675;
+}
+
+.switch {
+    width: 60px;
+    height: 34px;
+    display: inline-block;
+    position: relative;
+}
+
+.slider {
+    cursor: pointer;
+    background-color: #ccc;
+    transition: all .4s;
+    position: absolute;
+    inset: 0;
+}
+
+.slider:before {
+    content: "";
+    height: 26px;
+    width: 26px;
+    background-color: #fff;
+    transition: all .4s;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}
+
+input:checked + .slider {
+    background-color: #e9470c;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.sliderAlign {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.customSelect {
+    width: 8em;
+    background: #e9e9e9;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    padding: .2em;
+    font-family: Crimson Pro, serif;
+    font-size: 1em;
+    transition: all .5s;
+}
+
+/*# sourceMappingURL=index.ad85b7e3.css.map */
