@@ -7,6 +7,8 @@ function MainPage(props) {
         <main className="mainFrame">
             <Logo/>
 
+
+
         </main>
 
         //<div className={props.activo === "1" ? null : "invisible"}>

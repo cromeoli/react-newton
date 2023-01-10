@@ -1,0 +1,29 @@
+/*
+Hoja de estilos para el modo claro, haciendo un import quedan
+disponibles para los elementos convenientes y se aplica el modo claro.
+*/
+
+.lightNavbar{
+background: #D0D0D0;
+}
+
+.lightBackground{
+background: #E9E9E9;
+}
+
+.lightInputBar{
+background: #D0D0D0;
+}
+
+.lightKeyboardButtons{
+border: #07070A 2px solid;
+border-radius: 5px;
+}
+
+.lightResultArea {
+    background: #D0D0D0;
+}
+
+.lightNewtonLogo {
+    color: #07070A;
+}
