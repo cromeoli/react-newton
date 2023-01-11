@@ -109,6 +109,7 @@ body {
     content: url("../img/hoverBurger.svg");
     animation: .5s linear svgFade;
     rotate: 90deg;
+    cursor: pointer;
 }
 
 .iconSVG:hover {
