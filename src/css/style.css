@@ -185,6 +185,7 @@ body {
 
 .equalImg:hover {
     content: url("../img/hoverEqual.svg");
+    cursor: pointer;
 }
 
 .inputBarArea {
@@ -240,6 +241,7 @@ body {
 
 .keyboardButton:hover {
     background: #f19675;
+    cursor: pointer;
 }
 
 .keyboardButton:visited {

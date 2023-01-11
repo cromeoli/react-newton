@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import CalcBar from "./CalcBar";
 import Keyboard from "./Keyboard";
 import "../css/toggle.css";
-import OperationsArea from "./OperationsArea";
 import ResultBox from "./ResultBox";
 import {useState} from "react";
 import Button from "./Button";
@@ -32,7 +31,7 @@ function MainPage(props) {
             <Logo/>
             <CalcBar fun={setResult} state={buttonInput} handleInput={setButtonInput}/>
             <section className="keyBoardSection">
-                <Button write={modificar} operator={"x(over)y"}>
+                <Button write={modificar} operator={"(over)"}>
                     <img src={fraction} className="customIcon"/>
                 </Button>
                 <Button write={modificar} operator={"sin/"}>sin</Button>
