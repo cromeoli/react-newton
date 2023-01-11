@@ -8,10 +8,7 @@ import MainPage from "./components/MainPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-      <Navbar/>
-      <MainPage activo = "1"/>
-  </React.StrictMode>
+    <App/>
 );
 
 // If you want to start measuring performance in your app, pass a function

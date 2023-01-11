@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/style.css"
+import paco from "../ejemplo.json"
 
 function Logo(props){
     return (
