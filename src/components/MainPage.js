@@ -64,10 +64,6 @@ function MainPage(props) {
             </section>
             <ResultBox total={result.result}/>
         </main>
-
-        //<div className={props.activo === "1" ? null : "invisible"}>
-
-        //</div>
     );
 }
 
