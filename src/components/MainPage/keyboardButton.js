@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/style.css"
+import "../../css/style.css"
 
-function Button(props){
+function KeyboardButton(props){
     return (
         <a onClick={() => props.write(props.operator)} className="keyboardButton lightKeyboardButtons">
             {props.children}
@@ -9,4 +9,4 @@ function Button(props){
     );
 }
 
-export default Button;
+export default KeyboardButton;

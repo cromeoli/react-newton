@@ -5,7 +5,7 @@ import paco from "../ejemplo.json"
 function Logo(props){
     return (
         <section className="logoSection">
-            <h1 className="logoNewton lightNewtonLogo">newton</h1>
+            <a href="/" className="logoNewton lightNewtonLogo">newton</a>
         </section>
     );
 }

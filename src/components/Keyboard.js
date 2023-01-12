@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import KeyboardButton from "./MainPage/keyboardButton";
 import "../css/style.css"
 import fraction from "../img/fraction.svg"
 import integral from "../img/integral.svg"
@@ -12,10 +12,10 @@ function Keyboard({fun}){
     return (
         <>
 
-            <Button write={fun} operator={"x(over)y"}>
+            <KeyboardButton write={fun} operator={"x(over)y"}>
                 <img src={fraction} className="customIcon"/>
-            </Button>
-             <Button write={fun} operator={"sin"}>sin</Button>
+            </KeyboardButton>
+             <KeyboardButton write={fun} operator={"sin"}>sin</KeyboardButton>
 
         </>
     );

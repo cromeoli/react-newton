@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css"
-import clipboard from "../img/clipboard-idle.svg"
+import "../../css/style.css"
+import clipboard from "../../img/clipboard-idle.svg"
 import {Tooltip} from "@mui/material";
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 
@@ -43,6 +43,7 @@ function ResultBox(props){
                     </ClickAwayListener>
 
                     <div className="result">
+                        {console.log(props.total)}
                         {props.total}
                     </div>
                 </div>

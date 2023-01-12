@@ -19,13 +19,16 @@ function Navbar(props){
                 <a onClick={openMenu} id="burger" className="burger">
                     <img src={burger} className="burgerIcon"/>
                 </a>
+                <a href="/about">
+                    About
+                </a>
             </nav>
-
-            <GuestOverlay menu={menu}/>
 
             <div className={`overlayCloseArea ${menu ? "openOverlayCloseArea" : ""}`}>
 
             </div>
+
+            <GuestOverlay menu={menu}/>
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/style.css"
-import equal from "../img/Equal.svg"
+import "../../css/style.css"
+import equal from "../../img/Equal.svg"
 import {useState} from "react";
 
 function CalcBar(props){
