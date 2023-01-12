@@ -2,35 +2,83 @@ import React, {useState} from "react";
 import burger from "../img/Burger.svg"
 import "../css/style.css"
 import GuestOverlay from "./GuestOverlay";
+import {useLocation} from "react-router-dom";
+import LoginOverlay from "./LoginOverlay";
+import RegisterOverlay from "./RegisterOverlay";
 
 function Navbar(props){
     //Estado con bool en false init
-    const [menu, setMenu] = useState(false)
+    const [guestMenu, setGuestMenu] = useState(false)
+    const [loginMenu, setLoginMenu] = useState(false)
+    const [registerMenu, setRegisterMenu] = useState(false)
 
     //funcion onclick abrirMenu para cambiar el estado !menu
-    function openMenu(){
-        setMenu(!menu)
+    function toggleGuestMenu(){
+        if(!(loginMenu || registerMenu)){
+            setGuestMenu(!guestMenu)
+        }
     }
+    
+    function toggleLoginMenu(){
+        setLoginMenu(!loginMenu)
+    }
+
+    function toggleRegisterMenu(){
+        setRegisterMenu(!registerMenu)
+    }
+
+    function toggleHomeMenu(){
+
+    }
+
+    function checkSession(){
+        let registrado = ""
+
+        if(registrado){
+            toggleHomeMenu()
+        }else{
+            toggleGuestMenu()
+        }
+    }
+
+    function closeAll(){
+        setGuestMenu(false)
+        setLoginMenu(false)
+        setRegisterMenu(false)
+    }
+
+
+
+    let path = useLocation()
 
 
     return (
         <header>
             <nav className="navbar lightNavbar sticky">
-                <a onClick={openMenu} id="burger" className="burger">
+                <a onClick={toggleGuestMenu} id="burger" className="burger">
                     <img src={burger} className="burgerIcon"/>
                 </a>
-                <a href="/about">
+                <a href="/"
+                   className={`returnToNewton ${path.pathname === "/" ? "ocultar" : ""}`}>
+                    newton
+                </a>
+                <a href="/about" >
                     About
                 </a>
             </nav>
 
-            <div className={`overlayCloseArea ${menu ? "openOverlayCloseArea" : ""}`}>
+            <div onClick={closeAll}
+                 className={`overlayCloseArea ${guestMenu || loginMenu || registerMenu ? "openOverlayCloseArea" : ""}`}>
 
             </div>
 
-            <GuestOverlay menu={menu}/>
-
-
+            <GuestOverlay menuState={guestMenu}
+                          closeGuestMenu={toggleGuestMenu}
+                          openLoginMenu={toggleLoginMenu}
+                          openRegisterMenu={toggleRegisterMenu}
+            />
+            <LoginOverlay menuState={loginMenu} closeMenu={toggleLoginMenu}/>
+            <RegisterOverlay menuState={registerMenu} closeMenu={toggleLoginMenu}/>
 
         </header>
     );
