@@ -3,7 +3,7 @@ import newtonData from "../../datos.json"
 
 const mathData = newtonData
 
-function DocSearch({searchTerm, setSearchTerm, selectedCategory, setSelectedCategory}) {
+function DocSearch({setSearchTerm, setSelectedCategory}) {
 
     function handleSearch(e) {
         setSearchTerm(e.target.value);

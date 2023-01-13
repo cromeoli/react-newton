@@ -6,7 +6,7 @@ import data from "../../datos.json";
 
 function CalcBar(props){
 
-        const exampleList = ["simplify/", "cos/", "/pi", "/factor", "/zeroes"]
+        const exampleList = ["simplify/", "cos/", "derive/", "integrate/", "factor/", "zeroes/"]
 
         const [ejemplo, setEjemplo] = useState(exampleList[0])
 

@@ -15,10 +15,7 @@ function App() {
               <Route path="/docs" element={<DocPage/>}/>
               <Route path="/contact" element={<ContactPage/>}/>
           </Routes>
-
       </Router>
-
-
 
   );
 }
