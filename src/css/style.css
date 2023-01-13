@@ -418,7 +418,7 @@ body {
 }
 
 .loginOverlay {
-    height: 44vh;
+    height: 50vh;
     width: 40vh;
     z-index: 1;
     background: #07070a;
@@ -450,6 +450,12 @@ body {
     position: absolute;
     top: 6.5rem;
     left: 3%;
+}
+
+.registerErrorText{
+    font-family: LibertinusMath-Regular;
+    color: red;
+    transition: .3s;
 }
 
 @media (max-width: 600px) {
@@ -1156,6 +1162,154 @@ input:checked + .slider:before {
     font-family: Crimson Pro, serif;
     font-size: 1em;
     transition: all .5s;
+}
+
+.customDocSelect{
+    width: 100%;
+}
+
+.math-block {
+    background-color: #07070A;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 1em 1em;
+}
+
+.math-block__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.math-block__image img {
+    max-width: 100%;
+}
+
+.math-block p {
+    font-family: LibertinusMath-Regular;
+    color: #E9E9E9;
+}
+
+.docCategoryTitle{
+    font-family: "Crimson Pro";
+    color: #E9E9E9;
+    padding: 1em 1em;
+}
+
+.docTitle{
+    color: #f19675;
+    font-family: "Crimson Pro";
+}
+
+.docSearchBar {
+    width: 50vh;
+    height: 5vh;
+    border-radius: 8px;
+    margin: 3em 0 2em 0;
+}
+
+.docCustomSelect{
+    width: 10vw;
+}
+
+.docSearchArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.docPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.docDataBoard{
+    width: 40vw;
+}
+
+.routeButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 3em;
+    padding: 0 1em 0 1em;
+    margin: 1em;
+}
+
+.routeSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactForm{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactFormTitle{
+    font-family: "Crimson Pro";
+    color: #E9E9E9;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.contactTextArea{
+    text-indent: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+    resize: none;
+    background: #E9E9E9;
+    border-radius: 6px;
+    transition: 1s;
+    font-family: LibertinusMath-Regular;
+    padding-top: 1em;
+}
+
+.contactTextArea:focus{
+    color: #e9e9e9;
+    background: #07070a;
+    border-width: 1px;
+    border-color: #e9470c;
+    box-shadow: 0 0 3px #e9470c;
+    transition: 1s;
+    text-indent: 10px;
+    font-size: 1em;
+}
+
+.contactPage{
+    height: 65vh;
+}
+
+.contactButton{
+    margin-top: 1.5em;
+    cursor: pointer;
+ }
+
+.contactInput{
+    margin-top: 1em;
+    height: 3em;
+}
+
+.resetTextArea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
 }
 
 /*# sourceMappingURL=index.ad85b7e3.css.map */

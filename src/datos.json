@@ -1,0 +1,105 @@
+{
+  "Aritmética": {
+    "Simplificar": {
+      "operacion": "Simplify",
+      "codigo": "simplify/",
+      "descripcion": "La simplificación es el proceso de hacer una expresión matemática más sencilla sin cambiar su valor. Esto se logra eliminando factores comunes, sumando o restando términos similares, y utilizando las propiedades de las operaciones matemáticas.",
+      "imagen": "./img/"
+    },
+    "Factorizar": {
+      "operacion": "Factor",
+      "codigo": "factor/",
+      "descripcion": "La factorización es el proceso de escribir una expresión matemática como un producto de factores. Esto se logra utilizando la propiedad distributiva, factor común, diferencia de cuadrados, entre otras técnicas.",
+      "imagen": ""
+    },
+    "Valor Absoluto": {
+      "operacion": "Absolute Value",
+      "codigo": "abs/",
+      "descripcion": "El valor absoluto de un número es su magnitud sin tener en cuenta su signo. Por ejemplo, el valor absoluto de -5 es 5, y el valor absoluto de 5 es también 5.",
+      "imagen": ""
+    }
+  },
+  "Análisis matemático": {
+    "Derivada": {
+      "operacion": "Derive",
+      "codigo": "derive/",
+      "descripcion": "La derivada es una medida de cómo cambia una función en un punto dado. Se representa mediante la notación dy/dx, y se puede calcular utilizando reglas y fórmulas específicas.",
+      "imagen": ""
+    },
+    "Integral": {
+      "operacion": "Integrate",
+      "codigo": "integrate/",
+      "descripcion": "La integral en matemáticas es el área bajo la curva de una función en un intervalo dado. Se representa mediante la notación ∫, y se puede calcular utilizando reglas y fórmulas específicas.",
+      "imagen": ""
+    },
+    "Raíces": {
+      "operacion": "Find 0's",
+      "codigo": "zeroes/",
+      "descripcion": "Valores de x para los cuales una función es igual a cero.",
+      "imagen":""
+    },"Área bajo la curva": {
+      "operacion": "Area Under Curve",
+      "codigo": "area/",
+      "descripcion": "El área bajo la curva de una función en un intervalo dado se refiere al área comprendida entre la curva de la función y el eje x en ese intervalo. Esta área se puede calcular utilizando integrales.",
+      "imagen": ""
+    },
+    "Logaritmo": {
+      "operacion": "Logarithm",
+      "codigo": "log/",
+      "descripcion": "El logaritmo es una medida de la potencia a la que se debe elevar una base para obtener un determinado número. Se representa mediante la notación logb(x) y se puede calcular utilizando reglas y fórmulas específicas.",
+      "imagen": ""
+    }
+  },
+  "Trigonometría": {
+    "Coseno": {
+      "operacion": "Cosine",
+      "codigo": "cos/",
+      "descripcion": "El coseno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Se puede calcular utilizando reglas y fórmulas específicas.",
+      "imagen": ""
+    },
+    "Seno": {
+      "operacion": "Sine",
+      "codigo": "sin/",
+      "descripcion": "El seno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Se puede calcular utilizando reglas y fórmulas específicas.",
+      "imagen": ""
+    },
+    "Tangente": {
+      "operacion": "Tangent",
+      "codigo": "tan/",
+      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Se puede calcular utilizando reglas y fórmulas específicas.",
+      "imagen": ""
+    },
+    "Arcocoseno": {
+      "operacion": "Inverse Cosine",
+      "codigo": "arccos/",
+      "descripcion": "El arcocoseno es la función inversa del coseno. Devuelve el ángulo cuya función coseno es el valor dado.",
+      "imagen": ""
+    },
+    "Arcoseno": {
+      "operacion": "Inverse Sine",
+      "codigo": "arcsin/",
+      "descripcion": "El arcoseno es la función inversa del seno. Devuelve el ángulo cuya función seno es el valor dado.",
+      "imagen": ""
+    },
+    "Arcotangente": {
+      "operacion": "Inverse Tangent",
+      "codigo": "arctan/",
+      "descripcion": "La arcotangente es la función inversa de la tangente. Devuelve el ángulo cuya función tangente es el valor dado.",
+      "imagen": ""
+    }
+  },
+  "Constantes matemáticas": {
+    "Número de Euler": {
+      "operacion": "e",
+      "codigo": "",
+      "descripcion": "El número de Euler, también conocido como la constante de Euler, es un número irracional aproximadamente igual a 2.71828. Es importante en matemáticas, especialmente en cálculo y en la teoría de números",
+      "imagen": ""
+    },
+    "Número Pi": {
+      "operacion": "pi",
+      "codigo": "/pi",
+      "descripcion": "Pi, es un número irracional, es una constante matemática, la relación entre la circunferencia de un círculo y su diámetro, es aproximadamente igual a 3.14159",
+      "imagen": ""
+    }
+  }
+}

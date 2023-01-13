@@ -3,15 +3,21 @@ import "../../css/style.css"
 import AboutText from "./AboutText";
 import AboutSocial from "./AboutSocial";
 import Logo from "../Logo";
-import MediumButton from "./MediumButton";
+import RouteButton from "./RouteButton";
+
 function AboutPage(props){
     return (
         <main className="aboutMain">
             <AboutText/>
+            <span className="routeSection">
+            <RouteButton path="/contact">
+                Contact
+            </RouteButton>
+            <RouteButton path="/docs">
+                Docs
+            </RouteButton>
+            </span>
             <AboutSocial/>
-            <MediumButton ruta="/about">
-                Contacto
-            </MediumButton>
             <Logo/>
         </main>
 

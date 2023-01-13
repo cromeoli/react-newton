@@ -21,11 +21,12 @@ function RegisterOverlay(props){
                 <input className="formInputBox" placeholder="Register email"/>
                 <input className="formInputBox" placeholder="Username"/>
                 <input className="formInputBox" type="password" placeholder="Password"/>
-                <input className="formInputBox" type="password" placeholder="Confirm password"/>
+                <input className="formInputBox registerErrorInput" type="password" placeholder="Confirm password"/>
 
                 <a href="#" id="formSignUp" className="registerSignUpButton">
                     Sign up
                 </a>
+                <p >Las contraseñas no coinciden</p>
             </form>
         </div>
     );

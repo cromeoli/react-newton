@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
 import Navbar from "./components/Navbar";
 import MainPage from "./components/MainPage/MainPage";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import AboutPage from "./components/About/AboutPage";
+import DocPage from "./components/Docs/DocPage";
+import ContactPage from "./components/Contact/ContactPage";
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
           <Routes>
               <Route path="/" element={<MainPage/>}/>
               <Route path="/about" element={<AboutPage/>}/>
+              <Route path="/docs" element={<DocPage/>}/>
+              <Route path="/contact" element={<ContactPage/>}/>
           </Routes>
 
       </Router>

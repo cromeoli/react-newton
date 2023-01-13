@@ -1,3 +1,25 @@
 {
-  "Trigonometría": {"Coseno":"cos", "Seno": "sen", "Tangente": "tan"}
+  "Trigonometría": {"Coseno":"cos", "Seno": "sen", "Tangente": "tan"},
+
+  "Aritmética":
+  {
+    "Simplificar": {
+      "operacion": "Simplificar",
+      "código": "simplify/",
+      "Descripción": "Devuelve la operación"
+     },
+     "Factorizar": {
+       "operacion": "Factorizar",
+       "código": "factor/",
+       "Descripción": "Devuelve la operación"
+     },
+    "Valor absoluto": {
+      "operacion": "Simplificar",
+      "código": "simplify/",
+      "Descripción": "Devuelve la operación"
+    }
+  },
+
+  "Análisis Matemático": {}
+
 }
