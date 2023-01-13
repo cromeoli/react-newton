@@ -1,10 +1,37 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../../css/style.css"
 import equal from "../../img/Equal.svg"
 import {useState} from "react";
+import data from "../../datos.json";
 
 function CalcBar(props){
-        const [ejemplo, setEjemplo] = useState("simplify/")
+
+        const exampleList = ["simplify/", "cos/", "/pi", "/factor", "/zeroes"]
+
+        const [ejemplo, setEjemplo] = useState(exampleList[0])
+
+        const [counter, setCounter] = useState(1)
+
+        useEffect( () =>{
+            const interval = setInterval(
+                () => {
+                    console.log(counter)
+                    console.log(`Array ${exampleList.length}`)
+                    counter === exampleList.length ?
+                        setCounter(0) :
+                        setCounter(counter+1)
+                    console.log(counter === exampleList.length)
+
+                    setEjemplo(exampleList[counter])
+                }, 2200
+            );
+            return () => clearInterval(interval);
+                },[
+                    ejemplo
+            ]
+
+        )
+
 
         const getData =  async () => {
             try{
