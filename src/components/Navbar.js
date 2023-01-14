@@ -65,6 +65,9 @@ function Navbar(props){
                 <a href="/about" >
                     About
                 </a>
+                <a href="/donate" >
+                    Donate
+                </a>
             </nav>
 
             <div onClick={closeAll}

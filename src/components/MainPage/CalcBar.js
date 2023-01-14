@@ -36,7 +36,7 @@ function CalcBar(props){
         const getData =  async () => {
             try{
                 let operation = document.getElementById("inputValue").value
-                const data = await fetch(`https://newton.now.sh/api/v2/${operation}`);
+                const data = await fetch(`https://newton.now.sh/api/v2/${operation.replace(/\+/g, "%2B")}`);
                 const calculo = await data.json();
                 props.fun(calculo);
 
