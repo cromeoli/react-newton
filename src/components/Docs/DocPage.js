@@ -43,7 +43,8 @@ function DocPage() {
             // Filtro de operaciones según el término de búsqueda
             const filteredCategory = Object.keys(mathData[category])
                 .filter(operation => {
-                    // Si el término de búsqueda está vacío o se encuentra en el nombre de la operación, código o descripción, se incluye
+                    // Si el término de búsqueda está vacío o se encuentra en el nombre de la operación,
+                    // código o descripción, se incluye
                     return searchTerm === "" ||
                         operation.toLowerCase().includes(searchTerm.toLowerCase()) ||
                         mathData[category][operation].codigo.includes(searchTerm) ||

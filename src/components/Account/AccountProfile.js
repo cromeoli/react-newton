@@ -15,22 +15,22 @@ function AccountProfile(props){
         <form className="userDataForm">
             <label className="userDataLabel">
             Username
-                <input value="Cromoli" className="formInputBox"/>
+                <input value={localStorage.getItem('username')} className="formInputBox"/>
             </label>
 
             <label className="userDataLabel">
             Full Name
-                <input value="Christian Romero Oliva" className="formInputBox"/>
+                <input placeholder="Completa tu perfil" value="" className="formInputBox"/>
             </label>
 
             <label className="userDataLabel">
             Associed account
-                <input value="cromoli1808@gmail.com" className="formInputBox"/>
+                <input value={localStorage.getItem('email')} className="formInputBox"/>
             </label>
 
             <label className="userDataLabel">
             Phone
-                <input value="777 777 777" className="formInputBox"/>
+                <input placeholder="Completa tu perfil" value="" className="formInputBox"/>
             </label>
         </form>
 
