@@ -5,6 +5,7 @@ import AboutPage from "./components/About/AboutPage";
 import DocPage from "./components/Docs/DocPage";
 import ContactPage from "./components/Contact/ContactPage";
 import DonatePage from "./components/Donate/DonatePage";
+import AccountPage from "./components/Account/AccountPage";
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
               <Route path="/" element={<MainPage/>}/>
               <Route path="/about" element={<AboutPage/>}/>
               <Route path="/docs" element={<DocPage/>}/>
+              <Route path="/docs:id" element={<DocPage/>}/> {/*useParams*/}
               <Route path="/contact" element={<ContactPage/>}/>
               <Route path="/donate" element={<DonatePage/>}/>
+              <Route path="/account" element={<AccountPage/>}/>
           </Routes>
       </Router>
 

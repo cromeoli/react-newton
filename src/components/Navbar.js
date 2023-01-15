@@ -67,6 +67,8 @@ function Navbar(props){
                 </a>
                 <a href="/donate" >
                     Donate
+                </a><a href="/account" >
+                    Account
                 </a>
             </nav>
 
