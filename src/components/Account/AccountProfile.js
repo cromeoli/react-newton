@@ -20,7 +20,7 @@ function AccountProfile(props){
 
             <label className="userDataLabel">
             Full Name
-                <input placeholder="Completa tu perfil" value="" className="formInputBox"/>
+                <input placeholder="Completa tu perfil" className="formInputBox"/>
             </label>
 
             <label className="userDataLabel">
@@ -30,7 +30,7 @@ function AccountProfile(props){
 
             <label className="userDataLabel">
             Phone
-                <input placeholder="Completa tu perfil" value="" className="formInputBox"/>
+                <input placeholder="Completa tu perfil" className="formInputBox"/>
             </label>
         </form>
 
