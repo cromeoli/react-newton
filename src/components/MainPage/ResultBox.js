@@ -44,7 +44,7 @@ function ResultBox(props){
 
                     <div className="result">
                         {console.log(props.total)}
-                        {props.total}
+                        {props.total.toString()}
                     </div>
                 </div>
             </div>
