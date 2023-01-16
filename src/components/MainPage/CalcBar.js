@@ -37,6 +37,12 @@ function CalcBar(props){
 
     const getData =  async () => {
         try{
+            // Añadimos efectos cool a la barra para mostrar al usuario que se ha enviado la petición.
+            setPressEffect(true)
+            setTimeout(() => {
+                setPressEffect(false)
+            }, 3000);
+
             let operation = document.getElementById("inputValue").value
             const data = await fetch(`https://newton.now.sh/api/v2/${operation.replace(/\+/g, "%2B")}`);
             const calculo = await data.json();
@@ -57,11 +63,6 @@ function CalcBar(props){
 
     function handleIntro(event){
         if (event.key === 'Enter') {
-            setPressEffect(true)
-
-            setTimeout(() => {
-                setPressEffect(false)
-            }, 600);
             getData()
         }
     }

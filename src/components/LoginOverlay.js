@@ -4,6 +4,19 @@ import appleLogo from "../img/apple.svg"
 import googleLogo from "../img/google.png"
 
 function LoginOverlay(props){
+    function logIn(){
+        let auth = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if( (localStorage.getItem('username') === auth ||
+                localStorage.getItem('email') === auth) &&
+            localStorage.getItem('password') === password){
+
+            localStorage.setItem('logged', "true")
+            props.closeLogin()
+        }
+    }
+
     return (
         <div className={`loginOverlay ${props.menuState ? "open" : "closed"}`}>
             <div className="continueWithButtons">
@@ -18,10 +31,10 @@ function LoginOverlay(props){
             </div>
 
             <form className="registerForm">
-                <input className="formInputBox" placeholder="Username"/>
-                <input className="formInputBox" type="password" placeholder="Password"/>
+                <input id="username" className="formInputBox" placeholder="Email or username"/>
+                <input id="password" className="formInputBox" type="password" placeholder="Password"/>
 
-                <a onClick={props.closeMenu} href="#" id="formLogIn" className="registerSignUpButton">
+                <a onClick={logIn} href="#" id="formLogIn" className="registerSignUpButton">
                     Log in
                 </a>
             </form>

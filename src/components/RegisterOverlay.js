@@ -63,8 +63,13 @@ function RegisterOverlay(props){
             localStorage.setItem('email', email);
             localStorage.setItem('username', username);
             localStorage.setItem('password', password);
+            localStorage.setItem('logged', "true")
 
             setSuccess('Registrado con éxito')
+            setTimeout(() => {
+                props.closeRegister()
+            }, 600);
+
         }
     };
 
@@ -88,6 +93,7 @@ function RegisterOverlay(props){
                        value={email}
                        onChange={(event) => setEmail(event.target.value)}
                        onBlur={handleBlur}
+                       required
                 />
                 <input className={`formInputBox ${usernameError ? "formInputError" : ""}`}
                        placeholder="Username"
@@ -95,6 +101,7 @@ function RegisterOverlay(props){
                        value={username}
                        onChange={(event) => setUsername(event.target.value)}
                        onBlur={handleBlur}
+                       required
                 />
                 <input className={`formInputBox ${passwordError ? "formInputError" : ""}`}
                        type="password"
@@ -103,6 +110,7 @@ function RegisterOverlay(props){
                        value={password}
                        onChange={(event) => setPassword(event.target.value)}
                        onBlur={handleBlur}
+                       required
                 />
                 <input className={`formInputBox ${confirmPasswordError ? "formInputError" : ""}`}
                        type="password"
@@ -111,6 +119,7 @@ function RegisterOverlay(props){
                        value={confirmPassword}
                        onChange={(event) => setConfirmPassword(event.target.value)}
                        onBlur={handleBlur}
+                       required
                 />
 
                 <button id="formSignUp"

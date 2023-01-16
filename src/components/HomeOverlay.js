@@ -1,8 +1,16 @@
 import React from "react";
 import "../css/style.css"
 import avatar from "../img/Avatar.png"
+import {Link} from "react-router-dom"
 
 function HomeOverlay(props){
+
+    function logOut(){
+        localStorage.setItem('logged', "false")
+        props.closeHome()
+
+    }
+
     const openHomeOverlay = () => {
         let homeOverlay = document.querySelector('.homeOverlay')
         homeOverlay.style.display = "flex"
@@ -10,6 +18,11 @@ function HomeOverlay(props){
 
     return (
         <div className={`homeOverlay ${props.menuState ? "open" : ""}`}>
+            <Link to="/"
+               onClick={logOut}
+               className="homeOverlayLogOut">
+                Log out
+            </Link>
             <img src={avatar} className="avatar"/>
 
             <a href="/account" className="overlayButton1">My account</a>

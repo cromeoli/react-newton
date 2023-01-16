@@ -209,7 +209,7 @@ body {
 }
 
 .inputBarBlack{
-    background: #07070A;
+    background: #E9470C;
     color: #E9E9E9;
 }
 
@@ -510,6 +510,13 @@ body {
     position: absolute;
     top: 6.5rem;
     left: 3%;
+}
+
+.homeOverlayLogOut{
+    font-family: LibertinusMath-Regular;
+    color: #E9E9E9;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 @media (max-width: 600px) {

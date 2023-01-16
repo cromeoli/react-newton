@@ -57,7 +57,7 @@ function Navbar(props){
 
                 Para poder simular login
                 */}
-                <a onClick={localStorage.getItem('email') ? toggleHomeMenu : toggleGuestMenu}
+                <a onClick={localStorage.getItem('logged') === "true" ? toggleHomeMenu : toggleGuestMenu}
                    id="burger"
                    className="burger"
                 >
@@ -79,9 +79,11 @@ function Navbar(props){
                           openLoginMenu={toggleLoginMenu}
                           openRegisterMenu={toggleRegisterMenu}
             />
-            <LoginOverlay menuState={loginMenu} closeMenu={toggleLoginMenu}/>
-            <RegisterOverlay menuState={registerMenu} closeMenu={toggleLoginMenu}/>
-            <HomeOverlay menuState={homeMenu} closeMenu={toggleHomeMenu}/>
+            <LoginOverlay menuState={loginMenu} closeMenu={toggleLoginMenu} closeLogin={closeAll}/>
+            <RegisterOverlay menuState={registerMenu}
+                             closeMenu={toggleLoginMenu}
+                             closeRegister={closeAll}/>
+            <HomeOverlay menuState={homeMenu} closeMenu={toggleHomeMenu} closeHome={closeAll}/>
 
         </header>
     );
