@@ -3,19 +3,25 @@
     "Simplificar": {
       "operacion": "Simplify",
       "codigo": "simplify/",
-      "descripcion": "La simplificación es el proceso de hacer una expresión matemática más sencilla sin cambiar su valor. Esto se logra eliminando factores comunes, sumando o restando términos similares, y utilizando las propiedades de las operaciones matemáticas.",
+      "descripcion": "La simplificación es el proceso de hacer una expresión matemática más sencilla sin cambiar su valor. En newton, simplify/ se puede utilizar principalmente para hacer cálculos aritméticos básicos como sumas restas o multiplicaciones. Por ejemplo simplify/2^2+2(2) nos devolverá 8.",
       "imagen": "./img/"
     },
     "Factorizar": {
       "operacion": "Factor",
       "codigo": "factor/",
-      "descripcion": "La factorización es el proceso de escribir una expresión matemática como un producto de factores. Esto se logra utilizando la propiedad distributiva, factor común, diferencia de cuadrados, entre otras técnicas.",
+      "descripcion": "La factorización es el proceso de escribir una expresión matemática como un producto de factores. En newton basta con introducir la expresión a simplifar luego de introducir la operación 'factor'. Por ejemplo factor/x^2 + 2x = x (x + 2) ",
       "imagen": ""
     },
     "Valor Absoluto": {
       "operacion": "Absolute Value",
       "codigo": "abs/",
-      "descripcion": "El valor absoluto de un número es su magnitud sin tener en cuenta su signo. Por ejemplo, el valor absoluto de -5 es 5, y el valor absoluto de 5 es también 5.",
+      "descripcion": "El valor absoluto de un número es su magnitud sin tener en cuenta su signo. Por ejemplo, introducir abs/-1 nos devuelve 1.",
+      "imagen": ""
+    },
+    "Fracción": {
+      "operacion": "Fraction",
+      "codigo": "(over)",
+      "descripcion": "Para computar fracciones en newton, debemos escribirlas de esta forma numerador(sobre)denominador. Por ejemplo, para procesar 2/4 debe enviar su expresión como 2(over)4. La expresión resultante estará en notación matemática estándar (1/2, 3/4).",
       "imagen": ""
     }
   },
@@ -35,18 +41,18 @@
     "Raíces": {
       "operacion": "Find 0's",
       "codigo": "zeroes/",
-      "descripcion": "Valores de x para los cuales una función es igual a cero.",
+      "descripcion": "También llamadas raíces, son los valores de x para los cuales una función es igual a cero. Por ejemplo zeroes/x^2+2x nos devuelve -2,0.",
       "imagen":""
     },"Área bajo la curva": {
       "operacion": "Area Under Curve",
       "codigo": "area/",
-      "descripcion": "El área bajo la curva de una función en un intervalo dado se refiere al área comprendida entre la curva de la función y el eje x en ese intervalo. Esta área se puede calcular utilizando integrales.",
+      "descripcion": "El área bajo la curva de una función en un intervalo dado se refiere al área comprendida entre la curva de la función y el eje x en ese intervalo. En newton se introducirá con el formato c:d|f(x) donde c es el valor x inicial, d es el valor x final, y f(x) es la función bajo la cual se quiere la curva entre los dos valores x.",
       "imagen": ""
     },
     "Logaritmo": {
       "operacion": "Logarithm",
       "codigo": "log/",
-      "descripcion": "El logaritmo es una medida de la potencia a la que se debe elevar una base para obtener un determinado número. Se representa mediante la notación logb(x) y se puede calcular utilizando reglas y fórmulas específicas.",
+      "descripcion": "El logaritmo es una medida de la potencia a la que se debe elevar una base para obtener un determinado número. En newton se utiliza la notación log/x|b donde x es el numero y b la base sobre la que calcular el logaritmo, separados por un signo de pipe (|).",
       "imagen": ""
     }
   },
@@ -66,7 +72,7 @@
     "Tangente": {
       "operacion": "Tangent",
       "codigo": "tan/",
-      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Se puede calcular utilizando reglas y fórmulas específicas.",
+      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para encontrar la recta tangente de una función en un determinado valor x, envíe la petición como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'.",
       "imagen": ""
     },
     "Arcocoseno": {
