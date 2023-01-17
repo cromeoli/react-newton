@@ -48,6 +48,8 @@ placeholder el texto recomendado a buscar para encontrar el boton en la document
 - Al clicar en la caja de texto de la sección contacto, aparecerá un mensaje aleatorio como placeholder simpático. 
 - En la sección account/settings se encuentra un botón de eliminar sobre el que debemos pulsar dos veces. Al hacerlo saldrá un menú de confirmación
 - Clicar en bizum en la sección donations/bizum nos abrirá un overlay de información
+- El icono copiar al portapapeles efectivamente copia al portapapeles
+- La barra posee una animación cuando recibe texto copiado directamente
 
 ### Navegación
 El menú burger es el eje de la navegación, se utiliza principalmente para movernos entre las distintas secciones. Para cerrar el menú burger, debemos clicar fuera, pinchar en una sección para ir allí o hacer doble click en el botón burger. Los iconos de las redes sociales nos llevan a la red social en concreto, as
