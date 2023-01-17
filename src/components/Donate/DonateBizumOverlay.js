@@ -1,6 +1,13 @@
 import React from "react";
 import "../../css/style.css"
 
+/**
+ * DonateBizumOverlay - Componente que devuelve un overlay menu abierto
+ * cuando se clica al boton "Bizum"
+ *
+ * @component
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function DonateBizumOverlay(props){
     return (
         <div className={`bizumOverlay ${props.bizumMenuState ? "openOverlayDonations" : "closeOverlayDonations"}`}>

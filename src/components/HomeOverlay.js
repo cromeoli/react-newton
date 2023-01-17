@@ -7,10 +7,13 @@ import {Link} from "react-router-dom"
 /**
  * HomeOverlay
  *
+ * @component
+ *
  * Componente que renderiza el overlay de la pantalla principal
  * Permite al usuario cerrar sesión y navegar a otras secciones de la aplicación
  *
  * @param {Object} props - Props pasadas al componente.
+ * @returns {JSX.Element} El elemento JSX que representa el componente
  */
 function HomeOverlay(props){
 

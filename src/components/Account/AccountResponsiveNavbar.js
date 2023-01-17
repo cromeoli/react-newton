@@ -5,6 +5,15 @@ import securityIcon from "../../img/securityIcon.svg"
 import billing from "../../img/billingIcon.svg"
 import settings from "../../img/settingsIcon.svg"
 
+
+/**
+ * AccountResponsiveNavbar - Navbar que aparece cuando la aplicación toma un
+ * tamaño móvil. Funciona igual que el menú de selección de cuenta.
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AccountResponsiveNavbar(props){
     return (
         <nav className="navbarAccount sticky">

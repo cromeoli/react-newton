@@ -4,6 +4,16 @@ import twitterIco from "../../img/Twitter.svg"
 import instagramIco from "../../img/Instagram.svg"
 import githubIco from "../../img/github.svg"
 
+
+/**
+ * AboutSocial - Componente secundario que añade un bloque con enlaces e
+ * iconos a redes sociales varias
+ *
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AboutSocial(props){
     return (
         <>

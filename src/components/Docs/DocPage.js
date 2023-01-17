@@ -23,7 +23,8 @@ import {useParams} from "react-router-dom";
 const mathData = newtonData
 
 /**
- * DocPage - componente que muestra un buscador y una tabla para buscar y visualizar información sobre operaciones matemáticas
+ * DocPage - Componente principal que sirve para construir y mostrar un buscador y una tabla para buscar y
+ * visualizar información sobre operaciones matemáticas
  *
  * @returns {JSX.Element} El elemento JSX que representa el componente
  */

@@ -11,15 +11,50 @@ import absolute from "../../img/absolute.svg"
 import clearButton from "../../img/clear.svg";
 import fraction from "../../img/fraction.svg";
 
+
+/**
+ * MainPage
+ *
+ * @component
+ *
+ * Componente principal de la aplicación que se encarga de renderizar el logo de la aplicación,
+ * la barra de calculo, el teclado y el resultado
+ *
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function MainPage(props) {
+    /**
+     * State: result
+     *
+     * Contiene el estado del resultado
+     *
+     * @type {string}
+     */
     const [result, setResult] = useState({"result":""})
+
+    /**
+     * State: buttonInput
+     *
+     * Contendrá la pulsación del botón que se ha pulsado en ese momento
+     *
+     * @type {string}
+     */
     const [buttonInput, setButtonInput] = useState("")
 
+
+    /**
+     * Modifica el estado de buttonInput para ir mostrando los caracteres seleccionados en el teclado
+     *
+     * @param {string} value - valor a ser agregado a buttonInput
+     */
     function modificar(value){
         console.log("llamado")
         setButtonInput(buttonInput+value)
     }
 
+    /**
+     * Limpia el estado de buttonInput
+     */
     function clear(){
         setButtonInput("")
     }

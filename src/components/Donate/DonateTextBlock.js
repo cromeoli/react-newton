@@ -4,6 +4,14 @@ import DonateCardOverlay from "./DonateCardOverlay";
 import Logo from "../Logo";
 import DonateBizumOverlay from "./DonateBizumOverlay";
 
+
+/**
+ * DonateTextBlock - Componente para construir sección donate donde irá
+ * el texto principal de la página
+ *
+ * @component
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function DonateTextBlock(props){
     return (
         <div className="contentBoard">

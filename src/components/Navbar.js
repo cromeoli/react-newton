@@ -11,15 +11,49 @@ import HomeOverlay from "./HomeOverlay";
 /**
  * Navbar
  *
+ * @component
+ *
  * Componente que renderiza la barra de navegación superior de la aplicación.
  *
  * @param {Object} props - Props pasadas al componente.
+ * @returns {JSX.Element} El elemento JSX que representa el componente
  */
 function Navbar(props){
 
+    /**
+     * State: email
+     *
+     * Contiene el valor del email ingresado en el input correspondiente.
+     *
+     * @type {boolean}
+     */
     const [guestMenu, setGuestMenu] = useState(false)
+
+    /**
+     * State: loginMenu
+     *
+     * Contiene el estado del menu, si está abierto o no
+     *
+     * @type {boolean}
+     */
     const [loginMenu, setLoginMenu] = useState(false)
+
+    /**
+     * State: registerMenu
+     *
+     * Contiene el estado del menu, si está abierto o no
+     *
+     * @type {boolean}
+     */
     const [registerMenu, setRegisterMenu] = useState(false)
+
+    /**
+     * State: homeMenu
+     *
+     * Contiene el estado del menu, si está abierto o no
+     *
+     * @type {boolean}
+     */
     const [homeMenu, setHomeMenu] = useState(false)
 
     /**
@@ -33,7 +67,6 @@ function Navbar(props){
             setGuestMenu(!guestMenu)
         }
     }
-
 
     /**
      * toggleLoginMenu

@@ -6,6 +6,8 @@ import googleLogo from "../img/google.png"
 /**
  * RegisterOverlay
  *
+ * @component
+ *
  * Componente de React que se encarga de la funcionalidad de registro en la aplicación.
  *
  * @param {object} props - Props pasadas al componente.

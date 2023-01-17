@@ -4,6 +4,15 @@ import paypal from "../../img/paypal.svg"
 import patreon from "../../img/patreon.svg"
 
 
+/**
+ * AccountPayment - Componente que renderiza
+ *
+ * @component
+ * @property {string} path - La ruta a la que el botón enlaza
+ * @property {React.ReactNode} children - El contenido del botón
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AccountPayment(props){
     return (
         <section className={`paymentsArea ${props.paymentStatus ? "open" : "closed"}`}>

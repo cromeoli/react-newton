@@ -1,6 +1,15 @@
 import React, {useState} from "react";
 import "../../css/style.css"
 
+
+/**
+ * AccountSecurity - Componente que renderiza el menú seguridad de la sección account
+ * y permite actualizar los datos del usuario almacenados en el localstorage.
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AccountSecurity(props){
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -13,6 +22,12 @@ function AccountSecurity(props){
     const [newPasswordError, setNewPasswordError] = useState('');
 
 
+    /**
+     * handleBlur - Manejador de evento para el evento blur en los campos del formulario.
+     * Verifica la validez de los datos ingresados en los campos de password, confirmpassword y newpassword.
+     * Utiliza expresiones regulares para verificar la validez de los datos ingresados.
+     * @param {Object} event - El evento blur que se dispara cuando un campo pierde el foco
+     */
     const handleBlur = (event) => {
         const { name, value } = event.target;
 
@@ -44,6 +59,10 @@ function AccountSecurity(props){
         }
     };
 
+    /**
+     * saveChanges - Función que guarda los cambios realizados en la contraseña
+     * en el LocalStorage y muestra un mensaje de éxito.
+     */
     function saveChanges(){
         if ((!passwordError && !confirmPasswordError && !newPasswordError)
             && password === localStorage.getItem('password')) {
@@ -59,6 +78,10 @@ function AccountSecurity(props){
 
     }
 
+    /**
+     * Función para alternar la visibilidad de las contraseñas utilizando un
+     * estado
+     */
     function toggleVisiblePass(){
         setVisiblepass(!visiblePass)
     }

@@ -1,6 +1,13 @@
 import React, {useState} from "react";
 import "../../css/style.css"
 
+/**
+ * DonateCardOverlay - Componente secundario que devuelve un overlay menu abierto
+ * cuando se clica al boton "Credit Card"
+ *
+ * @component
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function DonateCardOverlay(props){
 
     const [creditCard, setCreditCard] = useState('');

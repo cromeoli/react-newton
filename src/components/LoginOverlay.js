@@ -6,18 +6,59 @@ import googleLogo from "../img/google.png"
 /**
  * LoginOverlay
  *
+ * @component
+ *
  * Componente que renderiza el overlay de login.
  * Permite al usuario iniciar sesión en la aplicación.
  *
  * @param {Object} props - Props pasadas al componente.
+ * @returns {JSX.Element} El elemento JSX que representa el componente
  */
 function LoginOverlay(props){
+
+    /**
+     * State: username
+     *
+     * Contiene el estado del usuario, se va actualizando conforme escribes
+     *
+     * @type {string}
+     */
     const [username, setUsername] = useState('');
+
+    /**
+     * State: password
+     *
+     * Contiene el estado de la contraseña, se va actualizando conforme escribes
+     *
+     * @type {string}
+     */
     const [password, setPassword] = useState('');
 
+    /**
+     * State: usernameError
+     *
+     * Contiene el error en usuario, se rellena si existe error
+     *
+     * @type {string}
+     */
     const [usernameError, setUsernameError] = useState('');
+
+    /**
+     * State: passwordError
+     *
+     * Contiene el error en usuario, se rellena si existe error
+     *
+     * @type {string}
+     */
     const [passwordError, setPasswordError] = useState('');
 
+    /**
+     * State: success
+     *
+     * Contiene un mensaje de éxito, si no se ha conseguido, estará vacío
+     *
+     * @type {string}
+     */
     const [success, setSuccess] = useState('');
 
     /**

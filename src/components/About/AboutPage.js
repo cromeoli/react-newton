@@ -5,6 +5,16 @@ import AboutSocial from "./AboutSocial";
 import Logo from "../Logo";
 import RouteButton from "./RouteButton";
 
+
+/**
+ * AboutPage - Componente principal que renderiza los componentes para
+ * construir la sección "about".
+ *
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AboutPage(props){
     return (
         <main className="aboutMain">

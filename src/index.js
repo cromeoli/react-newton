@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 document.title = "newton";
 
+/**
+ * @file index.js
+ * @author Christian Romero Oliva
+ * @version 0.1
+ * @institute I.E.S Rafael Alberti
+ *
+ * @overview Newton WebApp
+ */
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App/>

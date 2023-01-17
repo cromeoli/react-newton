@@ -1,6 +1,14 @@
 import React from "react";
 import "../../css/style.css"
 
+/**
+ * AboutText - Componente secundario que añade el texto principal de la
+ * página about
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AboutText(props){
     return (
         <>

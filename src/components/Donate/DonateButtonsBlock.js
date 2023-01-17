@@ -6,6 +6,14 @@ import paypal from "../../img/paypal.svg"
 import patreon from "../../img/patreon.svg"
 import bizum from "../../img/bizum.svg"
 
+
+/**
+ * DonateButtonsBlock - Componente secundario para construir sección donate donde irán
+ * los botones de la sección
+ *
+ * @component
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function DonateButtonsBlock(props){
 
 

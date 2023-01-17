@@ -1,6 +1,16 @@
 import React from "react";
 import "../../css/style.css"
 
+
+
+/**
+ * AccountSelectionMenu - Componente que renderiza un menú para navegar entre
+ * las diferentes secciones de account
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AccountSelectionMenu(props){
     console.log(props.menuStatus.profile)
 

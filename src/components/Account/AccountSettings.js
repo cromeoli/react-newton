@@ -1,6 +1,14 @@
 import React, {useState} from "react";
 import "../../css/style.css"
 
+
+/**
+ * AccountSelectionMenu - Componente que renderiza el menú ajustes de la sección account
+ *
+ * @component
+ * @param {props} props - Las propiedades del componente
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function AccountSettings(props){
 
     function handleDoubleClick(){

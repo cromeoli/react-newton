@@ -4,13 +4,34 @@ import clipboard from "../../img/clipboard-idle.svg"
 import {Tooltip} from "@mui/material";
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 
+/**
+ * ResultBox
+ *
+ * @component
+ *
+ * Componente que renderiza una caja de resultado
+ * Permite al usuario copiar el resultado al portapapeles al hacer clic en el ícono de portapapeles
+ *
+ * @param {Object} props - Props pasadas al componente.
+ * @param {Number} props.total - El valor numérico del resultado
+ * @returns {JSX.Element} El elemento JSX que representa el componente
+ */
 function ResultBox(props){
     const [open, setOpen] = React.useState(false);
-
+    /**
+     * handleTooltipClose
+     *
+     * Funcion que cierra el tooltip
+     */
     const handleTooltipClose = () => {
         setOpen(false);
     };
 
+    /**
+     * handleTooltipOpen
+     *
+     * Funcion que abre el tooltip
+     */
     const handleTooltipOpen = () => {
         setOpen(true);
     };
