@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import burger from "../img/Burger.svg"
 import "../css/style.css"
 import GuestOverlay from "./GuestOverlay";
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import LoginOverlay from "./LoginOverlay";
 import RegisterOverlay from "./RegisterOverlay";
 import HomeOverlay from "./HomeOverlay";
@@ -64,10 +64,10 @@ function Navbar(props){
                 >
                     <img src={burger} className="burgerIcon"/>
                 </a>
-                <a href="/"
+                <Link to="/"
                    className={`returnToNewton ${path.pathname === "/" ? "ocultar" : ""}`}>
                     newton
-                </a>
+                </Link>
             </nav>
 
             <div onClick={closeAll}
