@@ -3,8 +3,23 @@ import "../css/style.css"
 import avatar from "../img/Avatar.png"
 import {Link} from "react-router-dom"
 
+
+/**
+ * HomeOverlay
+ *
+ * Componente que renderiza el overlay de la pantalla principal
+ * Permite al usuario cerrar sesión y navegar a otras secciones de la aplicación
+ *
+ * @param {Object} props - Props pasadas al componente.
+ */
 function HomeOverlay(props){
 
+    /**
+     * logOut
+     *
+     * Funcion que maneja el cierre de sesión
+     * establece el estado de sesión en el almacenamiento local como "false"
+     */
     function logOut(){
         localStorage.setItem('logged', "false")
         props.closeHome()

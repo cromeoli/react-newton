@@ -3,19 +3,102 @@ import "../css/style.css"
 import appleLogo from "../img/apple.svg"
 import googleLogo from "../img/google.png"
 
+/**
+ * RegisterOverlay
+ *
+ * Componente de React que se encarga de la funcionalidad de registro en la aplicación.
+ *
+ * @param {object} props - Props pasadas al componente.
+ * @param {function} props.closeRegister - Función que cierra el overlay de registro.
+ * @param {string} props.menuState - Estado actual del menú de la aplicación.
+ *
+ * @returns {JSX} - JSX del componente.
+ */
+
 function RegisterOverlay(props){
+    /**
+     * State: email
+     *
+     * Contiene el valor del email ingresado en el input correspondiente.
+     *
+     * @type {string}
+     */
     const [email, setEmail] = useState('');
+    /**
+     * State: username
+     *
+     * Contiene el valor del username ingresado en el input correspondiente.
+     *
+     * @type {string}
+     */
     const [username, setUsername] = useState('');
+    /**
+     * State: password
+     *
+     * Contiene el valor de la contraseña ingresada en el input correspondiente.
+     *
+     * @type {string}
+     */
     const [password, setPassword] = useState('');
+
+    /**
+     * State: confirmPassword
+     *
+     * Contiene el valor de la confirmación de contraseña ingresada en el input correspondiente.
+     *
+     * @type {string}
+     */
     const [confirmPassword, setConfirmPassword] = useState('');
 
+    /**
+     * State: emailError
+     *
+     * Contiene el valor del error de email.
+     *
+     * @type {string}
+     */
     const [emailError, setEmailError] = useState('');
+    /**
+     * State: usernameError
+     *
+     * Contiene el valor del error de username.
+     *
+     * @type {string}
+     */
     const [usernameError, setUsernameError] = useState('');
+    /**
+     * State: passwordError
+     *
+     * Contiene el valor del error de password.
+     *
+     * @type {string}
+     */
     const [passwordError, setPasswordError] = useState('');
+    /**
+     * State: confirmPasswordError
+     *
+     * Contiene el valor del error de confirmPassword.
+     *
+     * @type {string}
+     */
+
     const [confirmPasswordError, setConfirmPasswordError] = useState('');
+    /**
+     * State: success
+     *
+     * Contiene el valor del mensaje de éxito de registro.
+     *
+     * @type {string}
+     */
 
     const [success, setSuccess] = useState('');
-
+    /**
+     * handleBlur
+     *
+     * Función que maneja el evento blur de los inputs del formulario de registro.
+     *
+     * @param {Event} event - Evento blur del input.
+     */
     const handleBlur = (event) => {
         const { name, value } = event.target;
         switch (name) {
@@ -56,6 +139,14 @@ function RegisterOverlay(props){
                 break;
         }
     };
+
+    /**
+     * handleSubmit
+     *
+     * Función que maneja el evento submit del formulario de registro.
+     *
+     * @param {Event} event - Evento submit del formulario.
+     */
 
     const handleSubmit = (event) => {
         event.preventDefault();

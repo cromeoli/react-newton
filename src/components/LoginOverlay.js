@@ -3,6 +3,14 @@ import "../css/style.css"
 import appleLogo from "../img/apple.svg"
 import googleLogo from "../img/google.png"
 
+/**
+ * LoginOverlay
+ *
+ * Componente que renderiza el overlay de login.
+ * Permite al usuario iniciar sesión en la aplicación.
+ *
+ * @param {Object} props - Props pasadas al componente.
+ */
 function LoginOverlay(props){
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -12,7 +20,13 @@ function LoginOverlay(props){
 
     const [success, setSuccess] = useState('');
 
-
+    /**
+     * handleBlur
+     *
+     * Funcion que valida el usuario y la contraseña
+     *
+     * @param {Object} event - evento del componente.
+     */
     const handleBlur = (event) => {
         const { name, value } = event.target;
         switch (name) {
@@ -37,6 +51,13 @@ function LoginOverlay(props){
         }
     };
 
+    /**
+     * logIn
+     *
+     * Funcion que maneja el inicio de sesión
+     * valida si el usuario y la contraseña son correctos y
+     * guarda el estado de sesión en el almacenamiento local
+     */
     function logIn(){
         console.log("Login...")
         let auth = document.getElementById("username").value;

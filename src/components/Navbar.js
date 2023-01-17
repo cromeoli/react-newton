@@ -7,34 +7,72 @@ import LoginOverlay from "./LoginOverlay";
 import RegisterOverlay from "./RegisterOverlay";
 import HomeOverlay from "./HomeOverlay";
 
+
+/**
+ * Navbar
+ *
+ * Componente que renderiza la barra de navegación superior de la aplicación.
+ *
+ * @param {Object} props - Props pasadas al componente.
+ */
 function Navbar(props){
-    //Estado con bool en false init
+
     const [guestMenu, setGuestMenu] = useState(false)
     const [loginMenu, setLoginMenu] = useState(false)
     const [registerMenu, setRegisterMenu] = useState(false)
     const [homeMenu, setHomeMenu] = useState(false)
 
-    //funcion onclick abrirMenu para cambiar el estado !menu
+    /**
+     * toggleGuestMenu
+     *
+     * Función que maneja el evento click del botón de menú de invitado.
+     * Cambia el estado del menú de invitado a su opuesto.
+     */
     function toggleGuestMenu(){
         if(!(loginMenu || registerMenu)){
             setGuestMenu(!guestMenu)
         }
     }
-    
+
+
+    /**
+     * toggleLoginMenu
+     *
+     * Función que maneja el evento click del botón de menú de inicio de sesión.
+     * Cambia el estado del menú de inicio de sesión a su opuesto.
+     */
     function toggleLoginMenu(){
         setLoginMenu(!loginMenu)
     }
 
+    /**
+     * toggleRegisterMenu
+     *
+     * Función que maneja el evento click del botón de menú de registro.
+     * Cambia el estado del menú de registro a su opuesto.
+     */
     function toggleRegisterMenu(){
         setRegisterMenu(!registerMenu)
     }
 
+    /**
+     * toggleHomeMenu
+     *
+     * Función que maneja el evento click del botón de menú de inicio.
+     * Cambia el estado del menú de inicio a verdadero.
+     */
     function toggleHomeMenu(){
         setHomeMenu(true)
         let homeOverlay = document.querySelector('.homeOverlay')
         homeOverlay.style.display = "flex"
     }
 
+    /**
+     * closeAll
+     *
+     * Función que maneja el evento click del área de cierre de menús.
+     * Cierra todos los menús y oculta el overlay de inicio.
+     */
     function closeAll(){
         let homeOverlay = document.querySelector('.homeOverlay')
 
@@ -45,6 +83,10 @@ function Navbar(props){
         homeOverlay.style.display = "none"
     }
 
+    /*
+    Defino donde estoy para que solo se muestre el logo de newton para regresar
+     a inicio desde páginas distintas al inicio
+     */
     let path = useLocation()
 
 
