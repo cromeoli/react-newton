@@ -5,6 +5,7 @@ function AccountSecurity(props){
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
+    const [visiblePass, setVisiblepass] = useState(false);
     const [success, setSuccess] = useState('');
 
     const [passwordError, setPasswordError] = useState('');
@@ -58,6 +59,10 @@ function AccountSecurity(props){
 
     }
 
+    function toggleVisiblePass(){
+        setVisiblepass(!visiblePass)
+    }
+
 
 
     return (
@@ -73,23 +78,29 @@ function AccountSecurity(props){
                            name="password"
                            onBlur={handleBlur}
                            onChange={(event) => setPassword(event.target.value)}
-
                     />
                 </label>
                 <label className="userDataLabel">
                     New password
                     <input
                            className="formInputBox"
+                           type={visiblePass ? "" : "password"}
                            placeholder="New password"
                            name="confirmpassword"
                            onBlur={handleBlur}
                            onChange={(event) => setConfirmPassword(event.target.value)}
                     />
                 </label>
+                <a className="orangeRoundedButton"
+                   onClick={toggleVisiblePass}
+                >
+                    Ver contraseñas
+                </a>
                 <label className="userDataLabel">
                     Confirm new password
                     <input
                            className="formInputBox"
+                           type={visiblePass ? "" : "password"}
                            placeholder="Confirm new password"
                            name="newpassword"
                            onBlur={handleBlur}
