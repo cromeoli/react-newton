@@ -45,9 +45,9 @@ function MainPage(props) {
                 <KeyboardButton write={modificar} operator={"simplify/"} name={"simplify"}>smp</KeyboardButton>
                 <KeyboardButton write={modificar} operator={"factor/"} name={"factor"}>factor</KeyboardButton>
                 <KeyboardButton write={modificar} operator={"pi"} name={"pi"}>π</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"arcsin/"} name={"csc"}>csc</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"arccos/"} name={"sec"}>sec</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"arctan/"} name={"cot"}>cot</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"arcsin/"} name={"arcsin"}>csc</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"arccos/"} name={"arccos"}>sec</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"arctan/"} name={"arctan"}>cot</KeyboardButton>
                 <KeyboardButton write={modificar} operator={"derive/"} name={"derive"}>
                     <img src={derivative} className="customIcon"/>
                 </KeyboardButton>
