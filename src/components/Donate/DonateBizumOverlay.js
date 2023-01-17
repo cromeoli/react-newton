@@ -10,9 +10,6 @@ function DonateBizumOverlay(props){
             <p className="bizumMobileNumber">
                 +1 123 123 123
             </p>
-            <button id="bizumCloseButton" className="bizumCloseButtom">
-                Close
-            </button>
         </div>
     );
 }
