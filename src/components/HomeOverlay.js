@@ -10,12 +10,6 @@ function HomeOverlay(props){
         props.closeHome()
 
     }
-
-    const openHomeOverlay = () => {
-        let homeOverlay = document.querySelector('.homeOverlay')
-        homeOverlay.style.display = "flex"
-    }
-
     return (
         <div className={`homeOverlay ${props.menuState ? "open" : ""}`}>
             <Link to="/"

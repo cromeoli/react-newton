@@ -1,19 +1,66 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/style.css"
 import appleLogo from "../img/apple.svg"
 import googleLogo from "../img/google.png"
 
 function LoginOverlay(props){
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const [usernameError, setUsernameError] = useState('');
+    const [passwordError, setPasswordError] = useState('');
+
+    const [success, setSuccess] = useState('');
+
+
+    const handleBlur = (event) => {
+        const { name, value } = event.target;
+        switch (name) {
+            case 'username':
+                if (value.length < 3) {
+                    console.log(username)
+                    setUsernameError('Usuario debe contener mas de 3 caracteres');
+                } else {
+                    setUsernameError('');
+                }
+                break;
+            case 'password':
+                if (value.length < 6) {
+                    console.log(password)
+                    setPasswordError('Debes escribir algo en contraseña');
+                } else {
+                    setPasswordError('');
+                }
+                break;
+            default:
+                break;
+        }
+    };
+
     function logIn(){
+        console.log("Login...")
         let auth = document.getElementById("username").value;
         let password = document.getElementById("password").value;
+
+        if(password !== localStorage.getItem('password')){
+            setPasswordError("Contraseña incorrecta")
+        }
+        if(auth !== localStorage.getItem('email')
+            && auth !== localStorage.getItem('username')){
+            setUsernameError("Usuario o email incorrecto o inexistente")
+        }
 
         if( (localStorage.getItem('username') === auth ||
                 localStorage.getItem('email') === auth) &&
             localStorage.getItem('password') === password){
 
             localStorage.setItem('logged', "true")
-            props.closeLogin()
+
+            setSuccess('Logueado con éxito')
+            setTimeout(() => {
+                props.closeLogin()
+                setSuccess('')
+            }, 600);
         }
     }
 
@@ -31,12 +78,35 @@ function LoginOverlay(props){
             </div>
 
             <form className="registerForm">
-                <input id="username" className="formInputBox" placeholder="Email or username"/>
-                <input id="password" className="formInputBox" type="password" placeholder="Password"/>
+                <input name="username"
+                       id="username"
+                       className={`formInputBox ${usernameError ? "formInputError" : ""}`}
+                       placeholder="Email or username"
+                       onBlur={handleBlur}
+                       required
+                />
+                <input name="password"
+                       id="password"
+                       className={`formInputBox ${passwordError ? "formInputError" : ""}`}
+                       type="password"
+                       placeholder="Password"
+                       onBlur={handleBlur}
+                       required
+                />
 
-                <a onClick={logIn} href="#" id="formLogIn" className="registerSignUpButton">
+                <a onClick={logIn}
+                   id="formLogIn"
+                   className="registerSignUpButton"
+                >
                     Log in
                 </a>
+                <p className="registerSuccess">{success}</p>
+                <p className="registerErrorText">
+                    {usernameError}
+                </p>
+                <p className="registerErrorText">
+                    {passwordError}
+                </p>
             </form>
         </div>
     );

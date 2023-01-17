@@ -90,6 +90,7 @@ function RegisterOverlay(props){
                 <input className={`formInputBox ${emailError ? "formInputError" : ""}`}
                        placeholder="Register email"
                        name="email"
+                       type="email"
                        value={email}
                        onChange={(event) => setEmail(event.target.value)}
                        onBlur={handleBlur}
