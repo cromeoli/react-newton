@@ -8,7 +8,7 @@ Con uso de la API https://newton.vercel.app/
 
 ### Intro
 
-En resumen la web de newton es una calculadora simple que recibe operaciones en formato **operación**/Expresion y devuelve un resultado. POsee además funcionalidades clave de web y dispone de una documentación donde consultar los diferentes parámetros para usarla.
+En resumen la web de newton es una calculadora simple que recibe operaciones en formato **operación**/Expresion y devuelve un resultado. Posee además funcionalidades clave de web y dispone de una documentación con buscador donde consultar los diferentes parámetros para usarla.
 
 La estructura de la web es la siguiente:
 
@@ -34,6 +34,9 @@ y volverte a loguear con la cuenta que has introducido. Si cambias los datos en 
 ### Actualización y completado de datos del usuario
 
 En account, el usuario puede cambiar sus datos y añadir 2 campos nuevos a sus datos que se almacenan. En password puede cambiar su contraseña mediante la validación de su contraseña anterior.
+
+### Docs
+En la sección about/docs encontramos un buscador que filtra por descripción, código de operación, sección, nombre de la operación o término en alguna de estas partes y actualiza dinámicamente el contenido en función de la búsqueda.
 
 ### Función "FastDocs"
 
