@@ -429,6 +429,7 @@ body {
 
 .closeOverlayDonations{
     opacity: 0;
+    display: none;
 }
 
 .hasOpenedMenu{

@@ -63,8 +63,6 @@ function AccountSecurity(props){
         setVisiblepass(!visiblePass)
     }
 
-
-
     return (
         <section className={`securityArea ${props.securityStatus ? "open" : "closed"}`}>
             <h1 className="profileTitle">Security</h1>
