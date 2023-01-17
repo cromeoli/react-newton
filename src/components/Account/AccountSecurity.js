@@ -24,7 +24,7 @@ function AccountSecurity(props){
                     <input className="formInputBox" placeholder="New email"/>
                 </label>
                 <button className="orangeRoundedButton">
-                    Set two step validation
+                    Save
                 </button>
             </form>
         </section>

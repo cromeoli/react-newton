@@ -34,6 +34,10 @@ function DocPage() {
     // State para almacenar la categoría seleccionada
     const [selectedCategory, setSelectedCategory] = useState("");
 
+    //Parametros de la URL para
+    const {searchParam} = useParams()
+    console.log(searchParam)
+
     // Filtro de datos según el término de búsqueda y la categoría seleccionada
     const filteredData = Object.keys(mathData)
         .filter(category => {
@@ -71,7 +75,9 @@ function DocPage() {
             <DocSearch searchTerm={searchTerm}
                        setSearchTerm={setSearchTerm}
                        selectedCategory={selectedCategory}
-                       setSelectedCategory={setSelectedCategory}/>
+                       setSelectedCategory={setSelectedCategory}
+                       searchParam={searchParam}
+            />
             {/* Se pasa el estado filtrado al componente DocTable */}
             <DocTable filteredData={filteredData}/>
         </div>

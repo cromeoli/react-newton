@@ -61,6 +61,14 @@ function CalcBar(props){
         }
     }
 
+    function animateBar(){
+        setPressEffect(true)
+        setTimeout(() => {
+            setPressEffect(false)
+        }, 3000);
+    }
+
+
     function handleIntro(event){
         if (event.key === 'Enter') {
             getData()
@@ -75,6 +83,7 @@ function CalcBar(props){
                               value={props.state}
                              onChange={handleChange}
                              onKeyDown={handleIntro}
+                             onPaste={animateBar}
                            placeholder={ejemplo}
                            className={`inputBar lightInputBar ${pressEffect ? 'inputBarBlack' : ""}`}>
                     </input>

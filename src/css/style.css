@@ -259,6 +259,10 @@ body {
     cursor: pointer;
 }
 
+.keyboardButton:active{
+    background-color: #E9470C;
+}
+
 .keyboardButton:visited {
     color: #07070a;
 }

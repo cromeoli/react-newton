@@ -17,7 +17,7 @@ function App() {
               <Route path="/account" element={<AccountPage/>}/>
               <Route path="/donate" element={<DonatePage/>}/>
               <Route path="/about" element={<AboutPage/>}/>
-              <Route path="/docs" element={<DocPage/>}/>
+              <Route path="/docs/:searchParam" element={<DocPage/>}/>
               <Route path="/contact" element={<ContactPage/>}/>
           </Routes>
       </Router>

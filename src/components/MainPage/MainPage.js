@@ -29,33 +29,33 @@ function MainPage(props) {
             <Logo/>
             <CalcBar fun={setResult} state={buttonInput} handleInput={setButtonInput}/>
             <section className="keyBoardSection">
-                <KeyboardButton write={modificar} operator={"(over)"}>
+                <KeyboardButton write={modificar} operator={"(over)"} name={"(over)"}>
                     <img src={fraction} className="customIcon"/>
                 </KeyboardButton>
-                <KeyboardButton write={modificar} operator={"sin/"}>sin</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"cos/"}>cos</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"tan/"}>tan</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"integrate/"}>
+                <KeyboardButton write={modificar} operator={"sin/"} name={"sin"}>sin</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"cos/"} name={"cos"}>cos</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"tan/"} name={"tan"}>tan</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"integrate/"} name={"integrate"}>
                     <img src={integral} className="customIcon"/>
                 </KeyboardButton>
-                <KeyboardButton write={modificar} operator={"log/"}>log</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"area/"}>
+                <KeyboardButton write={modificar} operator={"log/"} name={"log"}>log</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"area/"} name={"area"}>
                     <img src={calcArea} className="customIcon"/>
                 </KeyboardButton>
-                <KeyboardButton write={modificar} operator={"simplify/"}>smp</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"factor/"}>factor</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"pi"}>π</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"arcsin/"}>csc</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"arccos/"}>sec</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"arctan/"}>cot</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"derive/"}>
+                <KeyboardButton write={modificar} operator={"simplify/"} name={"simplify"}>smp</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"factor/"} name={"factor"}>factor</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"pi"} name={"pi"}>π</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"arcsin/"} name={"csc"}>csc</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"arccos/"} name={"sec"}>sec</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"arctan/"} name={"cot"}>cot</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"derive/"} name={"derive"}>
                     <img src={derivative} className="customIcon"/>
                 </KeyboardButton>
-                <KeyboardButton write={modificar} operator={"abs/"}>
+                <KeyboardButton write={modificar} operator={"abs/"} name={"abs"}>
                     <img src={absolute} className="customIcon"/>
                 </KeyboardButton>
-                <KeyboardButton write={modificar} operator={"zeroes/"}>0's</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"tangent/"}>tang</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"zeroes/"} name={"zeroes"}>0's</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"tangent/"} name={"tangent/"}>tang</KeyboardButton>
                 <KeyboardButton write={clear}>
                     <img src={clearButton} className="customIcon clearButton"/>
                 </KeyboardButton>

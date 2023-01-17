@@ -13,7 +13,7 @@ function AboutPage(props){
             <RouteButton path="/contact">
                 Contact
             </RouteButton>
-            <RouteButton path="/docs">
+            <RouteButton path="/docs/all">
                 Docs
             </RouteButton>
             </span>

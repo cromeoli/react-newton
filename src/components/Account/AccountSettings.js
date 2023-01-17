@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../css/style.css"
 
 function AccountSettings(props){
+
+    function handleDoubleClick(){
+        if(window.confirm("Are you sure you want to delete your account?")){
+            alert("Jamás escaparás de newton")
+        }
+    }
+
     return (
         <section className={`settingsArea ${props.settingsStatus ? "open" : "closed"}`}>
             <h1 className="profileTitle">Settings</h1>
@@ -28,9 +35,12 @@ function AccountSettings(props){
 
                 <div className="dangerZone">
                     <p>Danger Zone</p>
-                    <button className="deleteButton">
+                    <p>Double click to delete</p>
+                    <a className="deleteButton"
+                       onDoubleClick={handleDoubleClick}ç
+                    >
                         Delete Account
-                    </button>
+                    </a>
 
                 </div>
             </form>

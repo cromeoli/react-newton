@@ -12,9 +12,10 @@ const mathData = newtonData
  * @param {Function} setSearchTerm - Estado del término de búsqueda
  * @param {Function} setSelectedCategory - Estado para la categoría seleccionada
  *
+ * @param searchParam - Parametro que pasado a la URL para la funcion de ir a la documentación
  * @returns {JSX.Element} El elemento JSX que representa el componente
  */
-function DocSearch({setSearchTerm, setSelectedCategory}) {
+function DocSearch({setSearchTerm, setSelectedCategory, searchParam}) {
 
     /**
      * handleSearch - manejador del evento onChange del input de búsqueda
@@ -37,7 +38,7 @@ function DocSearch({setSearchTerm, setSelectedCategory}) {
             <div className="docSearchArea">
                 <input
                     type="text"
-                    placeholder="Buscar por operación, código o descripción"
+                    placeholder={searchParam === "all" ? "Buscar por operación, código o descripción" : searchParam + "/"}
                     onChange={handleSearch}
                     className="formInputBox docSearchBar"
                 />
