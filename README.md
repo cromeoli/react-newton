@@ -24,7 +24,7 @@ La estructura de la web es la siguiente:
   - Docs
   - Contacto
 
-Estas son algunas de las funcionalidades que se han implementado:
+## Estas son algunas de las funcionalidades que se han implementado:
 
 ### Login, registro y todos los campos con validaciones
 
