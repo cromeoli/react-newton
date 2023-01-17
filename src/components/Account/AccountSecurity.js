@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../css/style.css"
 
 function AccountSecurity(props){
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
     return (
         <section className={`securityArea ${props.securityStatus ? "open" : "closed"}`}>
             <h1 className="profileTitle">Security</h1>

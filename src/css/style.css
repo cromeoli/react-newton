@@ -756,6 +756,7 @@ body {
     gap: .5em;
     font-family: LibertinusMath-Regular, serif;
     font-size: 1.2rem;
+    width: 70%;
     display: flex;
 }
 
