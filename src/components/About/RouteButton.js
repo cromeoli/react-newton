@@ -1,11 +1,12 @@
 import React from "react";
 import "../../css/style.css"
+import {Link} from "react-router-dom";
 
 function RouteButton(props){
     return (
-        <a href={props.path} className="registerSignUpButton routeButton">
+        <Link to={props.path} className="registerSignUpButton routeButton">
             {props.children}
-        </a>
+        </Link>
     );
 }
 

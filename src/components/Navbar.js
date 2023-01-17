@@ -58,6 +58,7 @@ function Navbar(props){
                 Para poder simular login
                 */}
                 <a onClick={localStorage.getItem('logged') === "true" ? toggleHomeMenu : toggleGuestMenu}
+                   onDoubleClick={closeAll}
                    id="burger"
                    className="burger"
                 >
