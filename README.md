@@ -34,6 +34,8 @@ La estructura de la web es la siguiente:
 Está implementada una simulación completa de login y registro donde puedes registrarte con una cuenta, desloguearte clicando en el texto del menú burguer
 y volverte a loguear con la cuenta que has introducido. Si cambias los datos en tu sección "account" podrás seguir haciendo log in y log out con los datos se hayan guardado.
 
+![sqqq](https://user-images.githubusercontent.com/92324278/213030316-83ca2a6b-259c-4eac-9d67-164219f27902.gif)
+
 ### Actualización y completado de datos del usuario
 
 En account, el usuario puede cambiar sus datos y añadir 2 campos nuevos a sus datos que se almacenan. En password puede cambiar su contraseña mediante la validación de su contraseña anterior y también se ha implementado una funcionalidad para cambiar la visibilidad de la contraseña (filtro de privacidad).
