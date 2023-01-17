@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DocSearch from "./DocSearch";
 import DocTable from "./DocTable";
 import newtonData from "../../datos.json"
+import {useParams} from "react-router-dom";
 
 /**
  * @typedef {Object} MathData
@@ -67,7 +68,10 @@ function DocPage() {
     return (
         <div className="docPage">
             {/* Se pasa el estado y los setters al componente DocSearch */}
-            <DocSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+            <DocSearch searchTerm={searchTerm}
+                       setSearchTerm={setSearchTerm}
+                       selectedCategory={selectedCategory}
+                       setSelectedCategory={setSelectedCategory}/>
             {/* Se pasa el estado filtrado al componente DocTable */}
             <DocTable filteredData={filteredData}/>
         </div>

@@ -3,7 +3,7 @@ import "../../css/style.css"
 
 function AccountSettings(props){
     return (
-        <section className="settingsArea">
+        <section className={`settingsArea ${props.settingsStatus ? "open" : "closed"}`}>
             <h1 className="profileTitle">Settings</h1>
 
             <form className="settingsContainer">

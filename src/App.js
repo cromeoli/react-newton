@@ -13,12 +13,12 @@ function App() {
           <Navbar/>
           <Routes>
               <Route path="/" element={<MainPage/>}/>
+              <Route path="/docs:param" element={<DocPage/>}/>
+              <Route path="/account" element={<AccountPage/>}/>
+              <Route path="/donate" element={<DonatePage/>}/>
               <Route path="/about" element={<AboutPage/>}/>
               <Route path="/docs" element={<DocPage/>}/>
-              <Route path="/docs:id" element={<DocPage/>}/> {/*useParams*/}
               <Route path="/contact" element={<ContactPage/>}/>
-              <Route path="/donate" element={<DonatePage/>}/>
-              <Route path="/account" element={<AccountPage/>}/>
           </Routes>
       </Router>
 

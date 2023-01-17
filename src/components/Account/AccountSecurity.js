@@ -3,7 +3,7 @@ import "../../css/style.css"
 
 function AccountSecurity(props){
     return (
-        <section className="securityArea">
+        <section className={`securityArea ${props.securityStatus ? "open" : "closed"}`}>
             <h1 className="profileTitle">Security</h1>
 
             <form className="userDataForm">

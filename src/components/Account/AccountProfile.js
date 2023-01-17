@@ -8,7 +8,7 @@ import more from "../../img/+.svg"
 
 function AccountProfile(props){
     return (
-    <section className="profileArea">
+    <section className={`profileArea ${props.profileStatus ? "open" : "closed"}`}>
         <h1 className="profileTitle">My Profile</h1>
         <img src={avatar} className="accountAvatar"/>
 

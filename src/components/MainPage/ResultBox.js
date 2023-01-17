@@ -32,7 +32,6 @@ function ResultBox(props){
                             title="Copied"
                             placement="right"
                             arrow
-                            color="#131317"
                         >
                             <a onClick={handleTooltipOpen} className="copyToClipboard">
                                 <img onClick={() => {navigator.clipboard.writeText(props.total)}}

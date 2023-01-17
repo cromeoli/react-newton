@@ -5,7 +5,7 @@ import paypal from "../../img/paypal.svg"
 
 function AccountPayment(props){
     return (
-        <section className="paymentsArea">
+        <section className={`paymentsArea ${props.paymentStatus ? "open" : "closed"}`}>
             <h1 className="profileTitle">Payments</h1>
 
             <form className="userDataForm">
