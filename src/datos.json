@@ -60,37 +60,37 @@
     "Coseno": {
       "operacion": "Cosine",
       "codigo": "cos/",
-      "descripcion": "El coseno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular el coseno en newton utilizamos cos/a donde a es el ángulo en grados",
+      "descripcion": "El coseno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular el coseno en newton utilizamos cos/a donde a es el ángulo en radianes",
       "imagen": ""
     },
     "Seno": {
       "operacion": "Sine",
       "codigo": "sin/",
-      "descripcion": "El seno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular el seno en newton utilizamos sen/a donde a es el ángulo en grados",
+      "descripcion": "El seno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular el seno en newton utilizamos sen/a donde a es el ángulo en radianes",
       "imagen": ""
     },
     "Tangente": {
       "operacion": "Tangent",
       "codigo": "tan/",
-      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular la tangente en newton utilizamos tan/a donde a es el ángulo en grados",
+      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular la tangente en newton utilizamos tan/a donde a es el ángulo en radianes",
       "imagen": ""
     },
     "Arcocoseno": {
       "operacion": "Inverse Cosine",
       "codigo": "arccos/",
-      "descripcion": "El arcocoseno es la función inversa del coseno. Para calcular el arcocoseno en newton utilizamos arccos/a donde a es el ángulo en grados",
+      "descripcion": "El arcocoseno es la función inversa del coseno. Para calcular el arcocoseno en newton utilizamos arccos/a donde a es el ángulo en radianes",
       "imagen": ""
     },
     "Arcoseno": {
       "operacion": "Inverse Sine",
       "codigo": "arcsin/",
-      "descripcion": "El arcoseno es la función inversa del seno. Para calcular el arcoseno en newton utilizamos arcsin/a donde a es el ángulo en grados",
+      "descripcion": "El arcoseno es la función inversa del seno. Para calcular el arcoseno en newton utilizamos arcsin/a donde a es el ángulo en radianes",
       "imagen": ""
     },
     "Arcotangente": {
       "operacion": "Inverse Tangent",
       "codigo": "arctan/",
-      "descripcion": "La arcotangente es la función inversa de la tangente. Para calcular el seno en newton utilizamos arctan/a donde a es el ángulo en grados",
+      "descripcion": "La arcotangente es la función inversa de la tangente. Para calcular el seno en newton utilizamos arctan/a donde a es el ángulo en radianes",
       "imagen": ""
     },
     "Encontrar tangente": {
