@@ -55,11 +55,12 @@ placeholder el texto recomendado a buscar para encontrar el boton en la document
 - La barra posee una animación cuando recibe texto copiado directamente
 
 ### Navegación
-El menú burger es el eje de la navegación, se utiliza principalmente para movernos entre las distintas secciones. Para cerrar el menú burger, debemos clicar fuera, pinchar en una sección para ir allí o hacer doble click en el botón burger. Los iconos de las redes sociales nos llevan a la red social en concreto. Clicar en el logo de newton nos llevará a la p
+- El menú burger es el eje de la navegación, se utiliza principalmente para movernos entre las distintas secciones. 
+- Para cerrar el menú burger, debemos *clicar fuera, pinchar en una sección para ir allí o hacer doble click en el botón burger*. Los iconos de las redes sociales nos llevan a la red social en concreto. Clicar en el logo de newton nos llevará a la p
 
 ## Información extra
 
-La documentación puede generarse con el comando "npm run doc"
+La documentación puede generarse automáticamente con el comando "npm run doc".
 
 Se ha utilizado la librería de componentes de react mui/materialUI para hacer ciertos elementos como el tooltip al copiar el texto:
 
