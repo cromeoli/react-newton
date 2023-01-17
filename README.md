@@ -33,7 +33,7 @@ y volverte a loguear con la cuenta que has introducido. Si cambias los datos en 
 
 ### Actualización y completado de datos del usuario
 
-En account, el usuario puede cambiar sus datos y añadir 2 campos nuevos a sus datos que se almacenan. En password puede cambiar su contraseña mediante la validación de su contraseña anterior.
+En account, el usuario puede cambiar sus datos y añadir 2 campos nuevos a sus datos que se almacenan. En password puede cambiar su contraseña mediante la validación de su contraseña anterior y también se ha implementado una funcionalidad para cambiar la visibilidad de la contraseña (filtro de privacidad).
 
 ### Docs
 En la sección about/docs encontramos un buscador que filtra por descripción, código de operación, sección, nombre de la operación o término en alguna de estas partes y actualiza dinámicamente el contenido en función de la búsqueda.
