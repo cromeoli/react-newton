@@ -28,9 +28,9 @@ function RegisterOverlay(props){
                 }
                 break;
             case 'username':
-                if (value.length < 3) {
+                if (!/^[a-zA-Z0-9_]{3,15}$/.test(value)) {
                     console.log(username)
-                    setUsernameError('Usuario debe contener mas de 3 caracteres');
+                    setUsernameError('Usuario debe contener de 3 a 15 caracteres y solo puede incluir "_"');
                 } else {
                     setUsernameError('');
                 }

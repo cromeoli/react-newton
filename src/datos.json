@@ -29,13 +29,13 @@
     "Derivada": {
       "operacion": "Derive",
       "codigo": "derive/",
-      "descripcion": "La derivada es una medida de cómo cambia una función en un punto dado. Se representa mediante la notación dy/dx, y se puede calcular utilizando reglas y fórmulas específicas.",
+      "descripcion": "La derivada es una medida de cómo cambia una función en un punto dado. Para hacer una derivada en newton introduciremos la expresión derive/ y luego el polinomio a derivar. Por ejemplo /derive/x^2+2x nos devuelve 2 x + 2",
       "imagen": ""
     },
     "Integral": {
       "operacion": "Integrate",
       "codigo": "integrate/",
-      "descripcion": "La integral en matemáticas es el área bajo la curva de una función en un intervalo dado. Se representa mediante la notación ∫, y se puede calcular utilizando reglas y fórmulas específicas.",
+      "descripcion": "La integral en matemáticas es el área bajo la curva de una función en un intervalo dado. Para integrar en newton introduciremos integrate/ seguido del polinomio o funcion a integrar. Por ejemplo integrate/x^2+2x nos devuelve 1/3 x^3 + x^2.",
       "imagen": ""
     },
     "Raíces": {
@@ -60,43 +60,43 @@
     "Coseno": {
       "operacion": "Cosine",
       "codigo": "cos/",
-      "descripcion": "El coseno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Se puede calcular utilizando reglas y fórmulas específicas.",
+      "descripcion": "El coseno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular el coseno en newton utilizamos cos/a donde a es el ángulo en grados",
       "imagen": ""
     },
     "Seno": {
       "operacion": "Sine",
       "codigo": "sin/",
-      "descripcion": "El seno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Se puede calcular utilizando reglas y fórmulas específicas.",
+      "descripcion": "El seno es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular el seno en newton utilizamos sen/a donde a es el ángulo en grados",
       "imagen": ""
     },
     "Tangente": {
       "operacion": "Tangent",
       "codigo": "tan/",
-      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para encontrar la recta tangente de una función en un determinado valor x, se debe introducir la operación como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'.",
+      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para calcular la tangente en newton utilizamos tan/a donde a es el ángulo en grados",
       "imagen": ""
     },
     "Arcocoseno": {
       "operacion": "Inverse Cosine",
       "codigo": "arccos/",
-      "descripcion": "El arcocoseno es la función inversa del coseno. Devuelve el ángulo cuya función coseno es el valor dado.",
+      "descripcion": "El arcocoseno es la función inversa del coseno. Para calcular el arcocoseno en newton utilizamos arccos/a donde a es el ángulo en grados",
       "imagen": ""
     },
     "Arcoseno": {
       "operacion": "Inverse Sine",
       "codigo": "arcsin/",
-      "descripcion": "El arcoseno es la función inversa del seno. Devuelve el ángulo cuya función seno es el valor dado.",
+      "descripcion": "El arcoseno es la función inversa del seno. Para calcular el arcoseno en newton utilizamos arcsin/a donde a es el ángulo en grados",
       "imagen": ""
     },
     "Arcotangente": {
       "operacion": "Inverse Tangent",
       "codigo": "arctan/",
-      "descripcion": "La arcotangente es la función inversa de la tangente. Devuelve el ángulo cuya función tangente es el valor dado.",
+      "descripcion": "La arcotangente es la función inversa de la tangente. Para calcular el seno en newton utilizamos arctan/a donde a es el ángulo en grados",
       "imagen": ""
     },
     "Encontrar tangente": {
       "operacion": "Find Tangent",
       "codigo": "tangent/",
-      "descripcion": "Con newton se puede encontrar la recta tangente a una curva dada. Para ello se debe enviar la petición como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'. Consulte la tabla anterior para ver un ejemplo de solicitud.",
+      "descripcion": "Con newton se puede encontrar la recta tangente a una curva dada. Para ello se debe enviar la petición como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'.",
       "imagen": ""
     }
   },
@@ -110,7 +110,7 @@
     "Número Pi": {
       "operacion": "pi",
       "codigo": "/pi",
-      "descripcion": "Pi, es un número irracional, es una constante matemática, la relación entre la circunferencia de un círculo y su diámetro, es aproximadamente igual a 3.14159",
+      "descripcion": "Pi, es un número irracional, es una constante matemática, la relación entre la circunferencia de un círculo y su diámetro, es aproximadamente igual a 3.14159... Para introducirlo en newton utilizaremos /pi",
       "imagen": ""
     },
     "Limpiar input": {
