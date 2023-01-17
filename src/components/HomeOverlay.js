@@ -19,9 +19,9 @@ function HomeOverlay(props){
             </Link>
             <img src={avatar} className="avatar"/>
 
-            <a href="/account" className="overlayButton1">My account</a>
-            <a href="/donate" className="overlayButton2">Donate</a>
-            <a href="/about" className="overlayButton3">About</a>
+            <Link to="/account" className="overlayButton1">My account</Link>
+            <Link to="/donate" className="overlayButton2">Donate</Link>
+            <Link to="/about" className="overlayButton3">About</Link>
         </div>
     );
 }
