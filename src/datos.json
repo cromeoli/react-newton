@@ -52,7 +52,7 @@
     "Logaritmo": {
       "operacion": "Logarithm",
       "codigo": "log/",
-      "descripcion": "El logaritmo es una medida de la potencia a la que se debe elevar una base para obtener un determinado número. En newton se utiliza la notación log/x|b donde x es el numero y b la base sobre la que calcular el logaritmo, separados por un signo de pipe (|).",
+      "descripcion": "El logaritmo es una medida de la potencia a la que se debe elevar una base para obtener un determinado número. En newton se utiliza la notación log/x|b donde x es el numero y b la base sobre la que calcular el logaritmo, separados por una barra vertical '|'.",
       "imagen": ""
     }
   },
@@ -72,7 +72,7 @@
     "Tangente": {
       "operacion": "Tangent",
       "codigo": "tan/",
-      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para encontrar la recta tangente de una función en un determinado valor x, envíe la petición como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'.",
+      "descripcion": "La tangente es una función matemática que describe la relación entre los catetos y la hipotenusa de un triángulo rectángulo. Para encontrar la recta tangente de una función en un determinado valor x, se debe introducir la operación como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'.",
       "imagen": ""
     },
     "Arcocoseno": {
@@ -92,9 +92,15 @@
       "codigo": "arctan/",
       "descripcion": "La arcotangente es la función inversa de la tangente. Devuelve el ángulo cuya función tangente es el valor dado.",
       "imagen": ""
+    },
+    "Encontrar tangente": {
+      "operacion": "Find Tangent",
+      "codigo": "tangent/",
+      "descripcion": "Con newton se puede encontrar la recta tangente a una curva dada. Para ello se debe enviar la petición como c|f(x) donde c es el valor x dado y f(x) es la expresión de la función, el separador es una barra vertical '|'. Consulte la tabla anterior para ver un ejemplo de solicitud.",
+      "imagen": ""
     }
   },
-  "Constantes matemáticas": {
+  "Constantes matemáticas y otros": {
     "Número de Euler": {
       "operacion": "e",
       "codigo": "",
@@ -105,6 +111,12 @@
       "operacion": "pi",
       "codigo": "/pi",
       "descripcion": "Pi, es un número irracional, es una constante matemática, la relación entre la circunferencia de un círculo y su diámetro, es aproximadamente igual a 3.14159",
+      "imagen": ""
+    },
+    "Limpiar input": {
+      "operacion": "N/A",
+      "codigo": "N/A",
+      "descripcion": "Puedes utilizar el botón clear para limpiar directamente la barra de búsqueda de newton.",
       "imagen": ""
     }
   }

@@ -56,7 +56,7 @@ function MainPage(props) {
                 </KeyboardButton>
                 <KeyboardButton write={modificar} operator={"zeroes/"} name={"zeroes"}>0's</KeyboardButton>
                 <KeyboardButton write={modificar} operator={"tangent/"} name={"tangent/"}>tang</KeyboardButton>
-                <KeyboardButton write={clear}>
+                <KeyboardButton write={clear} name={"clear"}>
                     <img src={clearButton} className="customIcon clearButton"/>
                 </KeyboardButton>
             </section>
