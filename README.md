@@ -35,7 +35,7 @@ y volverte a loguear con la cuenta que has introducido. Si cambias los datos en 
 
 En account, el usuario puede cambiar sus datos y añadir 2 campos nuevos a sus datos que se almacenan. En password puede cambiar su contraseña mediante la validación de su contraseña anterior.
 
-### Función fastdocs
+### Función "FastDocs"
 
 Al mantener pulsado sobre uno de los botones de la calculadora durante más de 1 segundo, automáticamente nos llevará a la documentación estableciendo como
 placeholder el texto recomendado a buscar para encontrar el boton en la documentación.
@@ -47,7 +47,7 @@ placeholder el texto recomendado a buscar para encontrar el boton en la document
 - Clicar en bizum en la sección donations/bizum nos abrirá un overlay de información
 
 ### Navegación
-El menú burger es el eje de la navegación, se utiliza principalmente para movernos entre las distintas secciones. Para cerrar el menú burger, debemos clicar fuera, pinchar en una sección para ir allí o hacer doble click en el botón burger.
+El menú burger es el eje de la navegación, se utiliza principalmente para movernos entre las distintas secciones. Para cerrar el menú burger, debemos clicar fuera, pinchar en una sección para ir allí o hacer doble click en el botón burger. Los iconos de las redes sociales nos llevan a la red social en concreto, as
 
 ## Información extra
 
