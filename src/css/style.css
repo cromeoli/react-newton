@@ -359,7 +359,6 @@ body {
 
 .bizumOverlay {
     color: #fff;
-    opacity: 0;
     width: 100%;
     height: 20vh;
     background: #07070a;
@@ -418,6 +417,14 @@ body {
 
 .open{
     display: flex;
+}
+
+.openOverlayDonations{
+    opacity: 100;
+}
+
+.closeOverlayDonations{
+    opacity: 0;
 }
 
 .hasOpenedMenu{
@@ -575,7 +582,6 @@ body {
 }
 
 .cardOverlay {
-    opacity: 0;
     width: 100%;
     height: 100%;
     background: #07070a;

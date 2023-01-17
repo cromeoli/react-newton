@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/style.css"
 import DonateCardOverlay from "./DonateCardOverlay";
 import Logo from "../Logo";
+import DonateBizumOverlay from "./DonateBizumOverlay";
 
 function DonateTextBlock(props){
     return (
@@ -16,7 +17,8 @@ function DonateTextBlock(props){
                 <Logo/>
             </section>
 
-            <DonateCardOverlay/>
+            <DonateCardOverlay cardMenuState={props.cardMenuState}/>
+            <DonateBizumOverlay bizumMenuState={props.bizumMenuState}/>
         </div>
     );
 }

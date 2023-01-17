@@ -3,7 +3,7 @@ import "../../css/style.css"
 
 function DonateCardOverlay(props){
     return (
-        <div className="cardOverlay">
+        <div className={`cardOverlay ${props.cardMenuState ? "openOverlayDonations" : "closeOverlayDonations"}`}>
             <form className="userDataForm">
                 <label className="userDataLabel">
                     Credit card number

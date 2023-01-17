@@ -55,7 +55,7 @@ function MainPage(props) {
                     <img src={absolute} className="customIcon"/>
                 </KeyboardButton>
                 <KeyboardButton write={modificar} operator={"zeroes/"}>0's</KeyboardButton>
-                <KeyboardButton write={modificar} operator={"2.7182818"}>e</KeyboardButton>
+                <KeyboardButton write={modificar} operator={"tangent/"}>tang</KeyboardButton>
                 <KeyboardButton write={clear}>
                     <img src={clearButton} className="customIcon clearButton"/>
                 </KeyboardButton>

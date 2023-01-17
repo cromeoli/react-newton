@@ -3,7 +3,7 @@ import "../../css/style.css"
 
 function DonateBizumOverlay(props){
     return (
-        <div className="bizumOverlay">
+        <div className={`bizumOverlay ${props.bizumMenuState ? "openOverlayDonations" : "closeOverlayDonations"}`}>
             <p className="bizumDonationText">
                 Donations phone number
             </p>
