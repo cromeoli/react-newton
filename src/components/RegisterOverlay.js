@@ -107,7 +107,7 @@ function RegisterOverlay(props){
             case 'email':
                 if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
                     console.log(email)
-                    setEmailError('Email no válido');
+                    setEmailError('El email debe estar en formato ***@gmail.com o una extensión de correo válida');
                 } else {
                     setEmailError('');
                 }
@@ -121,9 +121,9 @@ function RegisterOverlay(props){
                 }
                 break;
             case 'password':
-                if (value.length < 6) {
+                if (!/^(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/.test(value)) {
                     console.log(password)
-                    setPasswordError('La contraseña debe tener un mínimo de caracteres');
+                    setPasswordError('La contraseña debe contener al menos 1 carácter especial, mayúscula, un número y ser mayor a 8 caracteres');
                 } else {
                     setPasswordError('');
                 }
@@ -161,6 +161,7 @@ function RegisterOverlay(props){
             setSuccess('Registrado con éxito')
             setTimeout(() => {
                 props.closeRegister()
+                setSuccess("")
             }, 600);
 
         }
@@ -189,6 +190,9 @@ function RegisterOverlay(props){
                        onBlur={handleBlur}
                        required
                 />
+                <p className={ `registerErrorText ${emailError ? "" : "displayNone"} ` }>
+                    {emailError}
+                </p>
                 <input className={`formInputBox ${usernameError ? "formInputError" : ""}`}
                        placeholder="Username"
                        name="username"
@@ -197,6 +201,9 @@ function RegisterOverlay(props){
                        onBlur={handleBlur}
                        required
                 />
+                <p className={ `registerErrorText ${usernameError ? "" : "displayNone"} ` }>
+                    {usernameError}
+                </p>
                 <input className={`formInputBox ${passwordError ? "formInputError" : ""}`}
                        type="password"
                        placeholder="Password"
@@ -206,6 +213,9 @@ function RegisterOverlay(props){
                        onBlur={handleBlur}
                        required
                 />
+                <p className={ `registerErrorText ${passwordError ? "": "displayNone"} `  }>
+                    {passwordError}
+                </p>
                 <input className={`formInputBox ${confirmPasswordError ? "formInputError" : ""}`}
                        type="password"
                        placeholder="Confirm password"
@@ -215,6 +225,10 @@ function RegisterOverlay(props){
                        onBlur={handleBlur}
                        required
                 />
+                <p className={ `registerErrorText ${confirmPasswordError ? "" : "displayNone"} ` }>
+                    {confirmPasswordError}
+                </p>
+
 
                 <button id="formSignUp"
                    className="registerSignUpButton"
@@ -222,21 +236,8 @@ function RegisterOverlay(props){
                     Sign up
                 </button>
 
-                <p className="registerSuccess">
+                <p className={ `registerSuccess`}>
                     {success}
-                </p>
-
-                <p className="registerErrorText">
-                    {emailError}
-                </p>
-                <p className="registerErrorText">
-                    {usernameError}
-                </p>
-                <p className="registerErrorText">
-                    {passwordError}
-                </p>
-                <p className="registerErrorText">
-                    {confirmPasswordError}
                 </p>
             </form>
         </div>

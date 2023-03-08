@@ -40,6 +40,10 @@ body {
     display: flex;
 }
 
+button{
+    border: none;
+}
+
 @media (max-width: 600px) {
     .mainFrame {
         width: 100vw;
@@ -405,7 +409,7 @@ body {
 
 .guestOverlay {
     height: 9vh;
-    width: 40vh;
+    width: fit-content;
     opacity: 100;
     background: #07070a;
     border-radius: 8px;
@@ -415,8 +419,18 @@ body {
     transition: all .5s;
     display: none;
     position: absolute;
+    z-index: 999;
+    gap: 15px;
     top: 5.5rem;
-    left: 3%;
+    left: 20px;
+}
+
+@media (max-width: 600px) {
+    .guestOverlay {
+        left: unset;
+        right: 20px;
+
+    }
 }
 
 .open{
@@ -446,44 +460,54 @@ body {
 }
 
 .loginOverlay {
-    height: 50vh;
-    width: 40vh;
-    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+    z-index: 999;
     background: #07070a;
     border-radius: 8px;
     flex-direction: column;
-    padding: 1.8em .7em .5em;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 2em;
     transition: all .5s;
     position: absolute;
     top: 6.5rem;
-    left: 3%;
+    left: 50px;
 }
 
 @media (max-width: 600px) {
     .loginOverlay {
-        top: 4rem;
-        left: 10vw;
+        left: unset;
+        right: 20px;
     }
 }
 
 .registerOverlay {
-    height: 31.5rem;
-    width: 40vh;
+    height: fit-content;
+    width: fit-content;
+    max-width: 25em;
     /* De aqui he quitado transition: 0;*/
-    z-index: 1;
+    z-index: 999;
     background: #07070a;
     border-radius: 8px;
     flex-direction: column;
     padding: 1.4em .7em .5em;
     position: absolute;
     top: 6.5rem;
-    left: 3%;
+    left: 20px;
 }
 
 .registerErrorText{
     font-family: LibertinusMath-Regular;
     color: red;
+    font-size: 0.9em;
     transition: .3s;
+    bottom: 1px;
+}
+
+.displayNone{
+    display: none;
 }
 
 .registerSuccess{
@@ -494,8 +518,8 @@ body {
 
 @media (max-width: 600px) {
     .registerOverlay {
-        top: 4rem;
-        left: 10vw;
+        left: unset;
+        right: 20px;
     }
 }
 
@@ -503,11 +527,12 @@ body {
     border-top: .5px solid #e9e9e9;
     flex-direction: column;
     align-items: center;
-    gap: 1.3em;
+    gap: 10px;
     margin-top: .5em;
     padding: 1em;
     font-size: 1.3em;
     display: flex;
+    position: relative;
 }
 
 .continueImg {
@@ -518,7 +543,7 @@ body {
     display: none;
     height: 50vh;
     width: 40vh;
-    z-index: 1;
+    z-index: 999;
     background: #07070a;
     border-radius: 8px;
     flex-direction: column;
@@ -576,7 +601,7 @@ body {
     width: 100%;
     height: 90vh;
     opacity: 0;
-    z-index: 0;
+    z-index: 1;
     transition: all .5s;
     display: none;
     position: absolute;
@@ -1085,7 +1110,7 @@ body {
 }
 
 .continueButton {
-    width: 80%;
+    width: 100%;
     height: 40%;
     color: #e9e9e9;
     border: .1em solid #e9470c;
@@ -1093,7 +1118,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    font-size: 1.3em;
+    font-size: 1em;
     transition: all .5s;
     display: flex;
 }
@@ -1115,7 +1140,7 @@ body {
     border-radius: 8px;
     padding: .5rem 1.8rem;
     font-family: Crimson Pro, serif;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .logInButton {
@@ -1123,7 +1148,7 @@ body {
     border-radius: 8px;
     padding: .5rem 1.8rem;
     font-family: Crimson Pro, serif;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .logInButton:hover, .signUpButton:hover {

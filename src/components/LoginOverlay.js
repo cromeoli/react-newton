@@ -128,7 +128,6 @@ function LoginOverlay(props){
 
     return (
         <div className={`loginOverlay ${props.menuState ? "open" : "closed"}`}>
-            <div className="continueWithButtons">
                 <a className="continueButton">
                     <img src={appleLogo} className="continueImg"/>
                         Continue with Apple
@@ -137,9 +136,7 @@ function LoginOverlay(props){
                     <img src={googleLogo} className="continueImg"/>
                         Continue with Google
                 </a>
-            </div>
 
-            <form className="registerForm">
                 <input name="username"
                        id="username"
                        className={`formInputBox ${usernameError ? "formInputError" : ""}`}
@@ -147,6 +144,9 @@ function LoginOverlay(props){
                        onBlur={handleBlur}
                        required
                 />
+                <p className={ `registerErrorText ${passwordError ? "" : "displayNone"}` }>
+                    {usernameError}
+                </p>
                 <input name="password"
                        id="password"
                        className={`formInputBox ${passwordError ? "formInputError" : ""}`}
@@ -155,6 +155,9 @@ function LoginOverlay(props){
                        onBlur={handleBlur}
                        required
                 />
+                <p className={ `registerErrorText ${passwordError ? "" : "displayNone"}` }>
+                    {passwordError}
+                </p>
 
                 <a onClick={logIn}
                    id="formLogIn"
@@ -163,13 +166,7 @@ function LoginOverlay(props){
                     Log in
                 </a>
                 <p className="registerSuccess">{success}</p>
-                <p className="registerErrorText">
-                    {usernameError}
-                </p>
-                <p className="registerErrorText">
-                    {passwordError}
-                </p>
-            </form>
+
         </div>
     );
 }

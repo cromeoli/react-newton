@@ -27,7 +27,9 @@ function DonatePage(props){
 
     return (
         <main className="donateMain">
-            <DonateTextBlock cardMenuState={cardMenu} bizumMenuState={bizumMenu}/>
+            <DonateTextBlock cardMenuState={cardMenu}
+                             bizumMenuState={bizumMenu}
+            />
             <DonateButtonsBlock openCreditCard={openCreditCard}
                                 openBizumMenu={openBizumMenu}
             />

@@ -40,14 +40,14 @@ function DocPage() {
     console.log(searchParam)
 
     // Filtro de datos según el término de búsqueda y la categoría seleccionada
-    const filteredData = Object.keys(mathData)
-        .filter(category => {
+    const filteredData = Object.keys(mathData) //Todas las keys del 1er nivel únicamente
+        .filter(category => { // Filter para los que coincidan con la categoría seleccionada
             // Si no hay categoría seleccionada o la categoría es igual a la seleccionada, se incluye
             return !selectedCategory || category === selectedCategory;
          }
         ).reduce((acc, category) => {
             // Filtro de operaciones según el término de búsqueda
-            const filteredCategory = Object.keys(mathData[category])
+            const filteredCategory = Object.keys(mathData[category]) //cojo la categoría una vez que existe, 2º Nivel
                 .filter(operation => {
                     // Si el término de búsqueda está vacío o se encuentra en el nombre de la operación,
                     // código o descripción, se incluye
